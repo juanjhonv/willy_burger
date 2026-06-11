@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CardPlatillo from '../../components/CardPlatillo.astro';
+import menuData from '../../data/menu.json';
+
+export function getStaticPaths() {
+  return menuData.categorias.map((categoria) => ({
+    params: { slug: categoria.slug },
+    props: { categoria },
+  }));
+}
+
+const { categoria } = Astro.props;
+const platillos = menuData.platillos.filter(
+  (p) => p.categoriaSlug === categoria.slug
+);
+---
+
+<Layout title={`${categoria.nombre} — Willy Burger`}>
+  <a
+    href="/"
+    class="inline-flex items-center gap-2 font-mono text-sm text-charcoal hover:text-lucha-red transition-colors mb-6 no-underline"
+  >
+    <span class="text-lg">←</span> Volver al menú
+  </a>
+
+  <div class="mb-8">
+    <h1 class="font-display text-4xl font-extrabold text-charcoal title-case mb-2">
+      {categoria.nombre}
+    </h1>
+    <p class="font-body text-lg text-charcoal-light">
+      {categoria.descripcion}
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    {platillos.map((platillo) => (
+      <CardPlatillo platillo={platillo} />
+    ))}
+  </div>
+</Layout>

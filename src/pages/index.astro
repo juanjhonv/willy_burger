@@ -1,17 +1,17 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import CardCategoria from '../components/CardCategoria.astro';
+import menuData from '../data/menu.json';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Willy Burger — Menú Digital">
+  <h1 class="font-display text-4xl font-extrabold text-charcoal title-case mb-8">
+    Nuestro Menú
+  </h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {menuData.categorias.map((categoria) => (
+      <CardCategoria categoria={categoria} />
+    ))}
+  </div>
+</Layout>

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import "@fontsource/anybody/800.css";
+@import "@fontsource/work-sans/400.css";
+@import "@fontsource/space-mono/700.css";
+
+@theme {
+  /* Brand colors */
+  --color-lucha-red: #E30613;
+  --color-lucha-red-dark: #b5000b;
+  --color-lucha-red-light: #ff5a5f;
+
+  --color-artisan-gold: #C69C6D;
+  --color-artisan-gold-light: #fecf9c;
+
+  --color-charcoal: #1A1A1A;
+  --color-charcoal-light: #5e3f3b;
+
+  /* Spacing */
+  --spacing-unit: 8px;
+  --spacing-gutter: 24px;
+  --spacing-stack-sm: 4px;
+  --spacing-stack-md: 12px;
+  --spacing-stack-lg: 24px;
+
+  /* Fonts */
+  --font-display: "Anybody", sans-serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-mono: "Space Mono", monospace;
+}
+
+/* Base styles */
+html {
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: var(--color-charcoal);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hard shadow utility for retro/vintage feel */
+.hard-shadow {
+  box-shadow: 4px 4px 0 0 var(--color-charcoal);
+}
+
+.hard-shadow-red {
+  box-shadow: 4px 4px 0 0 var(--color-lucha-red);
+}
+
+/* Title case utility */
+.title-case {
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}

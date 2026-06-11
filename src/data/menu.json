@@ -1,0 +1,157 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "slug": "entradas",
+      "nombre": "Entradas",
+      "descripcion": "Para comenzar con buen sabor",
+      "imagen": "https://picsum.photos/seed/entradas/400/300"
+    },
+    {
+      "id": 2,
+      "slug": "burgers",
+      "nombre": "Burgers",
+      "descripcion": "Nuestras famosas hamburguesas artesanales",
+      "imagen": "https://picsum.photos/seed/burgers/400/300"
+    },
+    {
+      "id": 3,
+      "slug": "parrillas",
+      "nombre": "Parrillas",
+      "descripcion": "Cortes a la parrilla con el toque criollo",
+      "imagen": "https://picsum.photos/seed/parrillas/400/300"
+    },
+    {
+      "id": 4,
+      "slug": "bebidas",
+      "nombre": "Bebidas",
+      "descripcion": "Bebidas para acompañar tu plato",
+      "imagen": "https://picsum.photos/seed/bebidas/400/300"
+    }
+  ],
+  "platillos": [
+    {
+      "id": 101,
+      "categoriaSlug": "entradas",
+      "titulo": "Ceviche Clásico",
+      "descripcion": "Pescado fresco marinado en limón con cebolla roja, ají, cilantro y camote.",
+      "precio": 28.90,
+      "adicionales": [
+        { "nombre": "Extra langostinos", "precio": 12.00 },
+        { "nombre": "Extra choclo", "precio": 5.00 }
+      ],
+      "imagen": "https://picsum.photos/seed/ceviche/400/300"
+    },
+    {
+      "id": 102,
+      "categoriaSlug": "entradas",
+      "titulo": "Papa a la Huancaína",
+      "descripcion": "Papas sancochadas con salsa de ají amarillo, queso fresco y leche evaporada.",
+      "precio": 18.50,
+      "adicionales": [
+        { "nombre": "Extra huevo duro", "precio": 3.00 }
+      ],
+      "imagen": "https://picsum.photos/seed/huancaina/400/300"
+    },
+    {
+      "id": 103,
+      "categoriaSlug": "entradas",
+      "titulo": "Anticuchos",
+      "descripcion": "Brochetas de corazón marinadas en ají panca, servidas con papas doradas.",
+      "precio": 22.00,
+      "adicionales": [
+        { "nombre": "Extra pan", "precio": 2.00 }
+      ],
+      "imagen": "https://picsum.photos/seed/anticuchos/400/300"
+    },
+    {
+      "id": 201,
+      "categoriaSlug": "burgers",
+      "titulo": "Burger Criolla",
+      "descripcion": "Carne de res 200g, huevo frito, lechuga, tomate y salsa criolla.",
+      "precio": 32.00,
+      "adicionales": [
+        { "nombre": "Extra queso cheddar", "precio": 5.00 },
+        { "nombre": "Extra bacon", "precio": 6.00 },
+        { "nombre": "Papas fritas", "precio": 8.00 }
+      ],
+      "imagen": "https://picsum.photos/seed/burger-criolla/400/300"
+    },
+    {
+      "id": 202,
+      "categoriaSlug": "burgers",
+      "titulo": "Burger Acevichada",
+      "descripcion": "Carne de res 200g con ceviche de pescado encima, cebolla morada y ají.",
+      "precio": 35.00,
+      "adicionales": [
+        { "nombre": "Extra ceviche", "precio": 8.00 },
+        { "nombre": "Papas fritas", "precio": 8.00 }
+      ],
+      "imagen": "https://picsum.photos/seed/burger-acevichada/400/300"
+    },
+    {
+      "id": 203,
+      "categoriaSlug": "burgers",
+      "titulo": "Burger de Pollo",
+      "descripcion": "Pechuga de pollo empanizada, lechuga, tomate y mayonesa casera.",
+      "precio": 28.00,
+      "adicionales": [
+        { "nombre": "Extra queso", "precio": 4.00 },
+        { "nombre": "Papas fritas", "precio": 8.00 }
+      ],
+      "imagen": "https://picsum.photos/seed/burger-pollo/400/300"
+    },
+    {
+      "id": 301,
+      "categoriaSlug": "parrillas",
+      "titulo": "Punta de Anca",
+      "descripcion": "Corte premium a la parrilla, servido con yuca frita y ensalada criolla.",
+      "precio": 45.00,
+      "adicionales": [
+        { "nombre": "Extra yuca frita", "precio": 8.00 },
+        { "nombre": "Huevo frito", "precio": 3.00 }
+      ],
+      "imagen": "https://picsum.photos/seed/punta-anca/400/300"
+    },
+    {
+      "id": 302,
+      "categoriaSlug": "parrillas",
+      "titulo": "Lomo a la Pimienta",
+      "descripcion": "Lomo fino sellado con pimienta negra, arroz con costra de huevo y papas doradas.",
+      "precio": 38.00,
+      "adicionales": [
+        { "nombre": "Extra arroz", "precio": 5.00 }
+      ],
+      "imagen": "https://picsum.photos/seed/lomo-pimienta/400/300"
+    },
+    {
+      "id": 401,
+      "categoriaSlug": "bebidas",
+      "titulo": "Chicha Morada",
+      "descripcion": "Bebida tradicional de maíz morado, canela, clavo y limón.",
+      "precio": 8.00,
+      "adicionales": [],
+      "imagen": "https://picsum.photos/seed/chicha-morada/400/300"
+    },
+    {
+      "id": 402,
+      "categoriaSlug": "bebidas",
+      "titulo": "Inca Kola",
+      "descripcion": "La bebida gaseosa dorada del Perú.",
+      "precio": 6.00,
+      "adicionales": [],
+      "imagen": "https://picsum.photos/seed/inca-kola/400/300"
+    },
+    {
+      "id": 403,
+      "categoriaSlug": "bebidas",
+      "titulo": "Limonada Natural",
+      "descripcion": "Limón fresco con agua y azúcar. Refrescante y natural.",
+      "precio": 7.00,
+      "adicionales": [
+        { "nombre": "Extra hielo", "precio": 1.00 }
+      ],
+      "imagen": "https://picsum.photos/seed/limonada/400/300"
+    }
+  ]
+}

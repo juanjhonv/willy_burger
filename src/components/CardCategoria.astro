@@ -1,0 +1,33 @@
+---
+import type { Categoria } from '../types/menu';
+
+interface Props {
+  categoria: Categoria;
+}
+
+const { categoria } = Astro.props;
+---
+
+<a
+  href={`/categoria/${categoria.slug}`}
+  class="block no-underline group"
+>
+  <article class="bg-white border-4 border-charcoal overflow-hidden transition-all duration-200 group-hover:translate-x-1 group-hover:translate-y-1 hard-shadow group-hover:shadow-none">
+    <div class="relative overflow-hidden aspect-[4/3]">
+      <img
+        src={categoria.imagen}
+        alt={categoria.nombre}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+      />
+    </div>
+    <div class="p-4">
+      <h2 class="font-display text-xl font-extrabold text-charcoal title-case mb-1">
+        {categoria.nombre}
+      </h2>
+      <p class="font-body text-sm text-charcoal-light">
+        {categoria.descripcion}
+      </p>
+    </div>
+  </article>
+</a>

@@ -1,0 +1,52 @@
+---
+import type { Platillo } from '../types/menu';
+
+interface Props {
+  platillo: Platillo;
+}
+
+const { platillo } = Astro.props;
+---
+
+<article class="bg-white border-4 border-charcoal p-4 mb-4">
+  <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+    <div class="sm:w-32 sm:h-32 flex-shrink-0">
+      <img
+        src={platillo.imagen}
+        alt={platillo.titulo}
+        class="w-full h-48 sm:h-full object-cover border-2 border-charcoal"
+        loading="lazy"
+      />
+    </div>
+    <div class="flex-1">
+      <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+        <div>
+          <h3 class="font-display text-lg font-extrabold text-charcoal title-case">
+            {platillo.titulo}
+          </h3>
+          <p class="font-body text-sm text-charcoal-light mt-1">
+            {platillo.descripcion}
+          </p>
+        </div>
+        <span class="font-mono text-lg font-bold text-lucha-red whitespace-nowrap">
+          S/ {platillo.precio.toFixed(2)}
+        </span>
+      </div>
+
+      {platillo.adicionales.length > 0 && (
+        <div class="mt-3 pt-3 border-t-2 border-dashed border-artisan-gold">
+          <p class="font-mono text-xs font-bold text-artisan-gold title-case mb-1">
+            Adicionales
+          </p>
+          <ul class="flex flex-wrap gap-2">
+            {platillo.adicionales.map((adicional) => (
+              <li class="bg-artisan-gold-light text-charcoal text-xs font-mono px-2 py-1 border border-artisan-gold">
+                {adicional.nombre} + S/ {adicional.precio.toFixed(2)}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,41 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Menú digital de Willy Burger — Sanguchería tradicional peruana' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="bg-lucha-red text-white py-4 px-6 border-b-4 border-charcoal">
+      <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3 no-underline">
+          <span class="font-display text-2xl font-extrabold tracking-tight">WILLY BURGER</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="flex-1 max-w-6xl mx-auto w-full px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="bg-charcoal text-white py-6 px-6 border-t-4 border-lucha-red">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="font-mono text-sm opacity-80">© 2026 Willy Burger — Lima, Perú</p>
+      </div>
+    </footer>
+  </body>
+</html>
