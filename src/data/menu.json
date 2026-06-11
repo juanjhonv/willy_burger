@@ -2,156 +2,539 @@
   "categorias": [
     {
       "id": 1,
-      "slug": "entradas",
-      "nombre": "Entradas",
-      "descripcion": "Para comenzar con buen sabor",
-      "imagen": "https://picsum.photos/seed/entradas/400/300"
+      "slug": "frappuccino",
+      "nombre": "Frappuccino",
+      "descripcion": "Bebidas heladas y cremosas para refrescarte",
+      "imagen": "https://picsum.photos/seed/frappuccino/400/300"
     },
     {
       "id": 2,
-      "slug": "burgers",
-      "nombre": "Burgers",
-      "descripcion": "Nuestras famosas hamburguesas artesanales",
-      "imagen": "https://picsum.photos/seed/burgers/400/300"
+      "slug": "milkshake",
+      "nombre": "Milshake",
+      "descripcion": "Batidos cremosos con sabores irresistibles",
+      "imagen": "https://picsum.photos/seed/milkshake/400/300"
     },
     {
       "id": 3,
-      "slug": "parrillas",
-      "nombre": "Parrillas",
-      "descripcion": "Cortes a la parrilla con el toque criollo",
-      "imagen": "https://picsum.photos/seed/parrillas/400/300"
+      "slug": "twister",
+      "nombre": "Twister",
+      "descripcion": "Tortillas enrolladas con rellenos deliciosos",
+      "imagen": "https://picsum.photos/seed/twister/400/300"
     },
     {
       "id": 4,
-      "slug": "bebidas",
-      "nombre": "Bebidas",
-      "descripcion": "Bebidas para acompañar tu plato",
-      "imagen": "https://picsum.photos/seed/bebidas/400/300"
+      "slug": "sandwiches",
+      "nombre": "Sandwiches",
+      "descripcion": "Sándwiches preparados con ingredientes frescos",
+      "imagen": "https://picsum.photos/seed/sandwiches/400/300"
+    },
+    {
+      "id": 5,
+      "slug": "hamburguesas",
+      "nombre": "Hamburguesas",
+      "descripcion": "Nuestras famosas hamburguesas artesanales",
+      "imagen": "https://picsum.photos/seed/hamburguesas/400/300"
+    },
+    {
+      "id": 6,
+      "slug": "adicionales",
+      "nombre": "Adicionales",
+      "descripcion": "Acompañamientos extras para tu pedido",
+      "imagen": "https://picsum.photos/seed/adicionales/400/300"
+    },
+    {
+      "id": 7,
+      "slug": "salchipapas",
+      "nombre": "Salchipapas",
+      "descripcion": "Clásicas salchipapas con variedad de salsas",
+      "imagen": "https://picsum.photos/seed/salchipapas/400/300"
+    },
+    {
+      "id": 8,
+      "slug": "broaster",
+      "nombre": "Broaster",
+      "descripcion": "Pollo crujiente al estilo broaster",
+      "imagen": "https://picsum.photos/seed/broaster/400/300"
+    },
+    {
+      "id": 9,
+      "slug": "mostrito",
+      "nombre": "Mostrito",
+      "descripcion": "Bebidas refrescantes de mostrito",
+      "imagen": "https://picsum.photos/seed/mostrito/400/300"
+    },
+    {
+      "id": 10,
+      "slug": "especialidad",
+      "nombre": "Especialidad",
+      "descripcion": "Platos especiales de la casa",
+      "imagen": "https://picsum.photos/seed/especialidad/400/300"
+    },
+    {
+      "id": 11,
+      "slug": "jugos",
+      "nombre": "Jugos",
+      "descripcion": "Jugos naturales y refrescantes",
+      "imagen": "https://picsum.photos/seed/jugos/400/300"
+    },
+    {
+      "id": 12,
+      "slug": "refrescos",
+      "nombre": "Refrescos",
+      "descripcion": "Bebidas gaseosas para acompañar",
+      "imagen": "https://picsum.photos/seed/refrescos/400/300"
+    },
+    {
+      "id": 13,
+      "slug": "yogurt-en-copa",
+      "nombre": "Yogurt en copa",
+      "descripcion": "Yogurt fresco con frutas y granola",
+      "imagen": "https://picsum.photos/seed/yogurt-copa/400/300"
+    },
+    {
+      "id": 14,
+      "slug": "combos",
+      "nombre": "Combos",
+      "descripcion": "Combos completos para compartir",
+      "imagen": "https://picsum.photos/seed/combos/400/300"
+    },
+    {
+      "id": 15,
+      "slug": "promos",
+      "nombre": "Promos",
+      "descripcion": "Promociones especiales por tiempo limitado",
+      "imagen": "https://picsum.photos/seed/promos/400/300"
+    },
+    {
+      "id": 16,
+      "slug": "extra",
+      "nombre": "Extra",
+      "descripcion": "Extras y adicionales para tu pedido",
+      "imagen": "https://picsum.photos/seed/extra/400/300"
+    },
+    {
+      "id": 17,
+      "slug": "frozen",
+      "nombre": "Frozen",
+      "descripcion": "Bebidas congeladas para el día de calor",
+      "imagen": "https://picsum.photos/seed/frozen/400/300"
     }
   ],
   "platillos": [
     {
       "id": 101,
-      "categoriaSlug": "entradas",
-      "titulo": "Ceviche Clásico",
-      "descripcion": "Pescado fresco marinado en limón con cebolla roja, ají, cilantro y camote.",
-      "precio": 28.90,
+      "categoriaSlug": "frappuccino",
+      "titulo": "Frappuccino de Vainilla",
+      "descripcion": "Cremoso frappuccino de vainilla con crema batida y chispas de chocolate.",
+      "precio": 15.0,
       "adicionales": [
-        { "nombre": "Extra langostinos", "precio": 12.00 },
-        { "nombre": "Extra choclo", "precio": 5.00 }
+        { "nombre": "Extra crema", "precio": 2.0 },
+        { "nombre": "Extra shot espresso", "precio": 3.0 }
       ],
-      "imagen": "https://picsum.photos/seed/ceviche/400/300"
+      "imagen": "https://picsum.photos/seed/frapp-vainilla/400/300"
     },
     {
       "id": 102,
-      "categoriaSlug": "entradas",
-      "titulo": "Papa a la Huancaína",
-      "descripcion": "Papas sancochadas con salsa de ají amarillo, queso fresco y leche evaporada.",
-      "precio": 18.50,
+      "categoriaSlug": "frappuccino",
+      "titulo": "Frappuccino de Mocha",
+      "descripcion": "Mezcla perfecta de café, chocolate y leche helada con crema batida.",
+      "precio": 16.0,
       "adicionales": [
-        { "nombre": "Extra huevo duro", "precio": 3.00 }
+        { "nombre": "Extra chocolate", "precio": 2.0 },
+        { "nombre": "Extra shot espresso", "precio": 3.0 }
       ],
-      "imagen": "https://picsum.photos/seed/huancaina/400/300"
+      "imagen": "https://picsum.photos/seed/frapp-mocha/400/300"
     },
     {
       "id": 103,
-      "categoriaSlug": "entradas",
-      "titulo": "Anticuchos",
-      "descripcion": "Brochetas de corazón marinadas en ají panca, servidas con papas doradas.",
-      "precio": 22.00,
+      "categoriaSlug": "frappuccino",
+      "titulo": "Frappuccino de Fresa",
+      "descripcion": "Batido helado de fresa natural con crema batida y trozos de fruta.",
+      "precio": 15.0,
       "adicionales": [
-        { "nombre": "Extra pan", "precio": 2.00 }
+        { "nombre": "Extra crema", "precio": 2.0 }
       ],
-      "imagen": "https://picsum.photos/seed/anticuchos/400/300"
+      "imagen": "https://picsum.photos/seed/frapp-fresa/400/300"
     },
     {
       "id": 201,
-      "categoriaSlug": "burgers",
-      "titulo": "Burger Criolla",
-      "descripcion": "Carne de res 200g, huevo frito, lechuga, tomate y salsa criolla.",
-      "precio": 32.00,
+      "categoriaSlug": "milkshake",
+      "titulo": "Milkshake de Chocolate",
+      "descripcion": "Clásico milkshake de chocolate con helado de vainilla y crema batida.",
+      "precio": 14.0,
       "adicionales": [
-        { "nombre": "Extra queso cheddar", "precio": 5.00 },
-        { "nombre": "Extra bacon", "precio": 6.00 },
-        { "nombre": "Papas fritas", "precio": 8.00 }
+        { "nombre": "Extra helado", "precio": 3.0 },
+        { "nombre": "Extra crema", "precio": 2.0 }
       ],
-      "imagen": "https://picsum.photos/seed/burger-criolla/400/300"
+      "imagen": "https://picsum.photos/seed/shake-choco/400/300"
     },
     {
       "id": 202,
-      "categoriaSlug": "burgers",
-      "titulo": "Burger Acevichada",
-      "descripcion": "Carne de res 200g con ceviche de pescado encima, cebolla morada y ají.",
-      "precio": 35.00,
+      "categoriaSlug": "milkshake",
+      "titulo": "Milkshake de Vainilla",
+      "descripcion": "Milkshake cremoso de vainilla con chispas de colores y crema batida.",
+      "precio": 14.0,
       "adicionales": [
-        { "nombre": "Extra ceviche", "precio": 8.00 },
-        { "nombre": "Papas fritas", "precio": 8.00 }
+        { "nombre": "Extra helado", "precio": 3.0 }
       ],
-      "imagen": "https://picsum.photos/seed/burger-acevichada/400/300"
+      "imagen": "https://picsum.photos/seed/shake-vainilla/400/300"
     },
     {
       "id": 203,
-      "categoriaSlug": "burgers",
-      "titulo": "Burger de Pollo",
-      "descripcion": "Pechuga de pollo empanizada, lechuga, tomate y mayonesa casera.",
-      "precio": 28.00,
+      "categoriaSlug": "milkshake",
+      "titulo": "Milkshake de Fresa",
+      "descripcion": "Milkshake de fresa natural, fresco y delicioso con crema batida.",
+      "precio": 14.0,
       "adicionales": [
-        { "nombre": "Extra queso", "precio": 4.00 },
-        { "nombre": "Papas fritas", "precio": 8.00 }
+        { "nombre": "Extra helado", "precio": 3.0 }
       ],
-      "imagen": "https://picsum.photos/seed/burger-pollo/400/300"
+      "imagen": "https://picsum.photos/seed/shake-fresa/400/300"
     },
     {
       "id": 301,
-      "categoriaSlug": "parrillas",
-      "titulo": "Punta de Anca",
-      "descripcion": "Corte premium a la parrilla, servido con yuca frita y ensalada criolla.",
-      "precio": 45.00,
+      "categoriaSlug": "twister",
+      "titulo": "Twister de Pollo",
+      "descripcion": "Tortilla crujiente con pollo empanizado, lechuga, tomate y aderezo especial.",
+      "precio": 18.0,
       "adicionales": [
-        { "nombre": "Extra yuca frita", "precio": 8.00 },
-        { "nombre": "Huevo frito", "precio": 3.00 }
+        { "nombre": "Extra pollo", "precio": 5.0 },
+        { "nombre": "Extra aderezo", "precio": 2.0 }
       ],
-      "imagen": "https://picsum.photos/seed/punta-anca/400/300"
+      "imagen": "https://picsum.photos/seed/twister-pollo/400/300"
     },
     {
       "id": 302,
-      "categoriaSlug": "parrillas",
-      "titulo": "Lomo a la Pimienta",
-      "descripcion": "Lomo fino sellado con pimienta negra, arroz con costra de huevo y papas doradas.",
-      "precio": 38.00,
+      "categoriaSlug": "twister",
+      "titulo": "Twister de Res",
+      "descripcion": "Tortilla con carne de res sazonada, queso, lechuga y salsa de la casa.",
+      "precio": 20.0,
       "adicionales": [
-        { "nombre": "Extra arroz", "precio": 5.00 }
+        { "nombre": "Extra carne", "precio": 6.0 },
+        { "nombre": "Extra queso", "precio": 3.0 }
       ],
-      "imagen": "https://picsum.photos/seed/lomo-pimienta/400/300"
+      "imagen": "https://picsum.photos/seed/twister-res/400/300"
     },
     {
       "id": 401,
-      "categoriaSlug": "bebidas",
-      "titulo": "Chicha Morada",
-      "descripcion": "Bebida tradicional de maíz morado, canela, clavo y limón.",
-      "precio": 8.00,
-      "adicionales": [],
-      "imagen": "https://picsum.photos/seed/chicha-morada/400/300"
+      "categoriaSlug": "sandwiches",
+      "titulo": "Sándwich de Pollo",
+      "descripcion": "Pechuga de pollo a la plancha, lechuga, tomate y mayonesa en pan tostado.",
+      "precio": 16.0,
+      "adicionales": [
+        { "nombre": "Extra queso", "precio": 3.0 },
+        { "nombre": "Extra bacon", "precio": 4.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/sand-pollo/400/300"
     },
     {
       "id": 402,
-      "categoriaSlug": "bebidas",
-      "titulo": "Inca Kola",
-      "descripcion": "La bebida gaseosa dorada del Perú.",
-      "precio": 6.00,
-      "adicionales": [],
-      "imagen": "https://picsum.photos/seed/inca-kola/400/300"
+      "categoriaSlug": "sandwiches",
+      "titulo": "Sándwich de Jamón y Queso",
+      "descripcion": "Clásico sándwich de jamón y queso derretido con lechuga y tomate.",
+      "precio": 14.0,
+      "adicionales": [
+        { "nombre": "Extra queso", "precio": 3.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/sand-jamon/400/300"
     },
     {
-      "id": 403,
-      "categoriaSlug": "bebidas",
-      "titulo": "Limonada Natural",
-      "descripcion": "Limón fresco con agua y azúcar. Refrescante y natural.",
-      "precio": 7.00,
+      "id": 501,
+      "categoriaSlug": "hamburguesas",
+      "titulo": "Hamburguesa Clásica",
+      "descripcion": "Carne de res 200g, lechuga, tomate, cebolla y salsa especial.",
+      "precio": 25.0,
       "adicionales": [
-        { "nombre": "Extra hielo", "precio": 1.00 }
+        { "nombre": "Extra queso cheddar", "precio": 4.0 },
+        { "nombre": "Extra bacon", "precio": 5.0 },
+        { "nombre": "Papas fritas", "precio": 8.0 }
       ],
-      "imagen": "https://picsum.photos/seed/limonada/400/300"
+      "imagen": "https://picsum.photos/seed/burger-clasica/400/300"
+    },
+    {
+      "id": 502,
+      "categoriaSlug": "hamburguesas",
+      "titulo": "Hamburguesa Doble",
+      "descripcion": "Doble carne de res 400g con doble queso, lechuga, tomate y salsa especial.",
+      "precio": 38.0,
+      "adicionales": [
+        { "nombre": "Extra bacon", "precio": 5.0 },
+        { "nombre": "Papas fritas", "precio": 8.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/burger-doble/400/300"
+    },
+    {
+      "id": 503,
+      "categoriaSlug": "hamburguesas",
+      "titulo": "Hamburguesa de Pollo",
+      "descripcion": "Pechuga de pollo empanizada con lechuga, tomate y mayonesa.",
+      "precio": 22.0,
+      "adicionales": [
+        { "nombre": "Extra queso", "precio": 4.0 },
+        { "nombre": "Papas fritas", "precio": 8.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/burger-pollo-nueva/400/300"
+    },
+    {
+      "id": 601,
+      "categoriaSlug": "adicionales",
+      "titulo": "Papas Fritas",
+      "descripcion": "Porción de papas fritas crujientes y doradas.",
+      "precio": 10.0,
+      "adicionales": [
+        { "nombre": "Extra queso cheddar", "precio": 4.0 },
+        { "nombre": "Extra bacon", "precio": 5.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/papas-fritas/400/300"
+    },
+    {
+      "id": 602,
+      "categoriaSlug": "adicionales",
+      "titulo": "Arroz con Huevo",
+      "descripcion": "Porción de arroz blanco con huevo frito encima.",
+      "precio": 8.0,
+      "adicionales": [],
+      "imagen": "https://picsum.photos/seed/arroz-huevo/400/300"
+    },
+    {
+      "id": 701,
+      "categoriaSlug": "salchipapas",
+      "titulo": "Salchipapa Clásica",
+      "descripcion": "Salchichas frescas con papas fritas, acompañadas de ketchup y mostaza.",
+      "precio": 15.0,
+      "adicionales": [
+        { "nombre": "Extra salchicha", "precio": 4.0 },
+        { "nombre": "Extra salsa huancaína", "precio": 3.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/salchi-clasica/400/300"
+    },
+    {
+      "id": 702,
+      "categoriaSlug": "salchipapas",
+      "titulo": "Salchipapa Especial",
+      "descripcion": "Salchichas con papas fritas, queso derretido, huevo frito y salsa de la casa.",
+      "precio": 20.0,
+      "adicionales": [
+        { "nombre": "Extra huevo", "precio": 3.0 },
+        { "nombre": "Extra queso", "precio": 4.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/salchi-especial/400/300"
+    },
+    {
+      "id": 801,
+      "categoriaSlug": "broaster",
+      "titulo": "Pollo Broaster",
+      "descripcion": "Piezas de pollo marinadas y crujientes al estilo broaster con papas fritas.",
+      "precio": 22.0,
+      "adicionales": [
+        { "nombre": "Extra pieza de pollo", "precio": 8.0 },
+        { "nombre": "Extra papas fritas", "precio": 6.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/broaster-pollo/400/300"
+    },
+    {
+      "id": 802,
+      "categoriaSlug": "broaster",
+      "titulo": "Alitas Broaster",
+      "descripcion": "Alitas de pollo crujientes bañadas en salsa picante o BBQ.",
+      "precio": 18.0,
+      "adicionales": [
+        { "nombre": "Extra alitas", "precio": 8.0 },
+        { "nombre": "Aderezo ranch", "precio": 2.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/alitas-broaster/400/300"
+    },
+    {
+      "id": 901,
+      "categoriaSlug": "mostrito",
+      "titulo": "Mostrito de Maracuyá",
+      "descripcion": "Bebida refrescante de maracuyá natural con hielo y azúcar.",
+      "precio": 10.0,
+      "adicionales": [
+        { "nombre": "Extra hielo", "precio": 1.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/mostrito-maracuya/400/300"
+    },
+    {
+      "id": 902,
+      "categoriaSlug": "mostrito",
+      "titulo": "Mostrito de Limón",
+      "descripcion": "Limón fresco con agua, hielo y un toque de menta.",
+      "precio": 9.0,
+      "adicionales": [
+        { "nombre": "Extra hielo", "precio": 1.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/mostrito-limon/400/300"
+    },
+    {
+      "id": 1001,
+      "categoriaSlug": "especialidad",
+      "titulo": "Lomo Saltado",
+      "descripcion": "Salteado de lomo de res con tomate, cebolla, papas fritas y arroz.",
+      "precio": 35.0,
+      "adicionales": [
+        { "nombre": "Extra arroz", "precio": 4.0 },
+        { "nombre": "Extra papas fritas", "precio": 6.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/lomo-saltado/400/300"
+    },
+    {
+      "id": 1002,
+      "categoriaSlug": "especialidad",
+      "titulo": "Ají de Gallina",
+      "descripcion": "Gallina deshilachada en salsa de ají amarillo con arroz y papas.",
+      "precio": 28.0,
+      "adicionales": [
+        { "nombre": "Extra arroz", "precio": 4.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/aji-gallina/400/300"
+    },
+    {
+      "id": 1101,
+      "categoriaSlug": "jugos",
+      "titulo": "Jugo de Naranja",
+      "descripcion": "Jugo de naranja natural recién exprimido.",
+      "precio": 8.0,
+      "adicionales": [],
+      "imagen": "https://picsum.photos/seed/jugo-naranja/400/300"
+    },
+    {
+      "id": 1102,
+      "categoriaSlug": "jugos",
+      "titulo": "Jugo de Papaya",
+      "descripcion": "Jugo de papaya natural con un toque de limón.",
+      "precio": 8.0,
+      "adicionales": [],
+      "imagen": "https://picsum.photos/seed/jugo-papaya/400/300"
+    },
+    {
+      "id": 1201,
+      "categoriaSlug": "refrescos",
+      "titulo": "Inca Kola",
+      "descripcion": "La bebida gaseosa dorada del Perú, bien fría.",
+      "precio": 5.0,
+      "adicionales": [],
+      "imagen": "https://picsum.photos/seed/inca-kola-nueva/400/300"
+    },
+    {
+      "id": 1202,
+      "categoriaSlug": "refrescos",
+      "titulo": "Coca Cola",
+      "descripcion": "Refresco de Coca Cola bien frío.",
+      "precio": 5.0,
+      "adicionales": [],
+      "imagen": "https://picsum.photos/seed/coca-cola/400/300"
+    },
+    {
+      "id": 1203,
+      "categoriaSlug": "refrescos",
+      "titulo": "Sprite",
+      "descripcion": "Refresco de Sprite con sabor limón.",
+      "precio": 5.0,
+      "adicionales": [],
+      "imagen": "https://picsum.photos/seed/sprite/400/300"
+    },
+    {
+      "id": 1301,
+      "categoriaSlug": "yogurt-en-copa",
+      "titulo": "Yogurt con Granola",
+      "descripcion": "Yogurt natural con granola crujiente y miel.",
+      "precio": 12.0,
+      "adicionales": [
+        { "nombre": "Extra granola", "precio": 3.0 },
+        { "nombre": "Extra miel", "precio": 2.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/yogurt-granola/400/300"
+    },
+    {
+      "id": 1302,
+      "categoriaSlug": "yogurt-en-copa",
+      "titulo": "Yogurt con Frutas",
+      "descripcion": "Yogurt natural con trozos de frutas frescas de temporada.",
+      "precio": 14.0,
+      "adicionales": [
+        { "nombre": "Extra frutas", "precio": 4.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/yogurt-frutas/400/300"
+    },
+    {
+      "id": 1401,
+      "categoriaSlug": "combos",
+      "titulo": "Combo Familiar",
+      "descripcion": "Hamburguesa doble + papas fritas grandes + 2 refrescos.",
+      "precio": 55.0,
+      "adicionales": [
+        { "nombre": "Refresco adicional", "precio": 5.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/combo-familiar/400/300"
+    },
+    {
+      "id": 1402,
+      "categoriaSlug": "combos",
+      "titulo": "Combo Personal",
+      "descripcion": "Hamburguesa clásica + papas fritas + refresco.",
+      "precio": 30.0,
+      "adicionales": [
+        { "nombre": "Upgrade doble carne", "precio": 10.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/combo-personal/400/300"
+    },
+    {
+      "id": 1501,
+      "categoriaSlug": "promos",
+      "titulo": "2x1 en Hamburguesas",
+      "descripcion": "Todas las martes y jueves lleva 2 hamburguesas por el precio de 1.",
+      "precio": 25.0,
+      "adicionales": [],
+      "imagen": "https://picsum.photos/seed/promo-2x1/400/300"
+    },
+    {
+      "id": 1502,
+      "categoriaSlug": "promos",
+      "titulo": "Combo Amigos",
+      "descripcion": "2 hamburguesas + papas grandes + 2 milkshakes a precio especial.",
+      "precio": 48.0,
+      "adicionales": [],
+      "imagen": "https://picsum.photos/seed/combo-amigos/400/300"
+    },
+    {
+      "id": 1601,
+      "categoriaSlug": "extra",
+      "titulo": "Huevo Frito",
+      "descripcion": "Huevo frito perfecto para acompañar tu plato.",
+      "precio": 3.0,
+      "adicionales": [],
+      "imagen": "https://picsum.photos/seed/huevo-frito/400/300"
+    },
+    {
+      "id": 1602,
+      "categoriaSlug": "extra",
+      "titulo": "Tocino",
+      "descripcion": "Porción de tocino crujiente y dorado.",
+      "precio": 5.0,
+      "adicionales": [],
+      "imagen": "https://picsum.photos/seed/tocino/400/300"
+    },
+    {
+      "id": 1701,
+      "categoriaSlug": "frozen",
+      "titulo": "Frozen de Limón",
+      "descripcion": "Bebida congelada de limón refrescante y perfecta para el calor.",
+      "precio": 12.0,
+      "adicionales": [
+        { "nombre": "Extra hielo", "precio": 1.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/frozen-limon/400/300"
+    },
+    {
+      "id": 1702,
+      "categoriaSlug": "frozen",
+      "titulo": "Frozen de Mango",
+      "descripcion": "Bebida congelada de mango natural, dulce y refrescante.",
+      "precio": 13.0,
+      "adicionales": [
+        { "nombre": "Extra hielo", "precio": 1.0 }
+      ],
+      "imagen": "https://picsum.photos/seed/frozen-mango/400/300"
     }
   ]
 }
