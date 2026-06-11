@@ -9,7 +9,6 @@ export interface Platillo {
   titulo: string;
   descripcion: string;
   precio: number;
-  adicionales: Adicional[];
   imagen: string;
 }
 
@@ -19,6 +18,7 @@ export interface Categoria {
   nombre: string;
   descripcion: string;
   imagen: string;
+  adicionales: Adicional[];
 }
 
 export interface MenuData {
