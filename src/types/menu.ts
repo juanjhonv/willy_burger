@@ -5,11 +5,21 @@ export interface Adicional {
 
 export interface Platillo {
   id: number;
-  categoriaSlug: string;
+  subcategoriaSlug: string;
   titulo: string;
   descripcion: string;
   precio: number;
   imagen: string;
+}
+
+export interface SubCategoria {
+  id: number;
+  slug: string;
+  nombre: string;
+  categoriaSlug: string;
+  descripcion: string;
+  imagen: string;
+  adicionales: Adicional[];
 }
 
 export interface Categoria {
@@ -18,7 +28,6 @@ export interface Categoria {
   nombre: string;
   descripcion: string;
   imagen: string;
-  adicionales: Adicional[];
 }
 
 export interface MenuData {

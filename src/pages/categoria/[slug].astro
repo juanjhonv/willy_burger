@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import CardPlatillo from '../../components/CardPlatillo.astro';
 import menuData from '../../data/menu.json';
+import CardSubCategoria from '../../components/CardSubCategoria.astro';
 
 export function getStaticPaths() {
   return menuData.categorias.map((categoria) => ({
@@ -11,7 +12,7 @@ export function getStaticPaths() {
 }
 
 const { categoria } = Astro.props;
-const platillos = menuData.platillos.filter(
+const subcategorias = menuData.subcategorias.filter(
   (p) => p.categoriaSlug === categoria.slug
 );
 ---
@@ -34,22 +35,8 @@ const platillos = menuData.platillos.filter(
   </div>
 
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-    {platillos.map((platillo) => (
-      <CardPlatillo platillo={platillo} />
+    {subcategorias.map((subcategoria) => (
+      <CardSubCategoria subcategoria={subcategoria} />
     ))}
   </div>
-  {categoria.adicionales.length > 0 && (
-    <div class="mt-3 pt-3 border-t-2 border-dashed border-artisan-gold">
-      <p class="font-mono text-xs font-bold text-artisan-gold title-case mb-1">
-        Adicionales
-      </p>
-      <ul class="flex flex-wrap gap-2">
-        {categoria.adicionales.map((adicional) => (
-          <li class="bg-artisan-gold-light text-charcoal text-xs font-mono px-2 py-1 border border-artisan-gold">
-            {adicional.nombre} + S/ {adicional.precio.toFixed(2)}
-          </li>
-        ))}
-      </ul>
-    </div>
-  )}
 </Layout>

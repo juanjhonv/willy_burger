@@ -2,8 +2,32 @@
   "categorias": [
     {
       "id": 1,
+      "slug": "comidas",
+      "nombre": "Comidas y Platos principales",
+      "descripcion": "Incluyen papas fritas + ensalada",
+      "imagen": "https://picsum.photos/seed/hamburguesas/400/300"
+    },
+    {
+      "id": 1,
+      "slug": "bebidas",
+      "nombre": "Bebidas, cafetería y dulces",
+      "descripcion": "Incluyen papas fritas + ensalada",
+      "imagen": "https://picsum.photos/seed/hamburguesas/400/300"
+    },
+    {
+      "id": 1,
+      "slug": "combos",
+      "nombre": "Combos, compartir y adicionales",
+      "descripcion": "Incluyen papas fritas + ensalada",
+      "imagen": "https://picsum.photos/seed/hamburguesas/400/300"
+    }
+  ],
+  "subcategorias": [
+    {
+      "id": 1,
       "slug": "hamburguesas",
       "nombre": "Hamburguesas",
+      "categoriaSlug": "comidas",
       "descripcion": "Incluyen papas fritas + ensalada",
       "imagen": "https://picsum.photos/seed/hamburguesas/400/300",
       "adicionales": [
@@ -21,6 +45,7 @@
       "id": 2,
       "slug": "sandwiches",
       "nombre": "Sándwiches",
+      "categoriaSlug": "comidas",
       "descripcion": "Sándwiches preparados con ingredientes frescos",
       "imagen": "https://picsum.photos/seed/sandwiches/400/300",
       "adicionales": []
@@ -29,6 +54,7 @@
       "id": 3,
       "slug": "salchipapas",
       "nombre": "Salchipapas",
+      "categoriaSlug": "comidas",
       "descripcion": "Incluyen papas fritas + ensalada",
       "imagen": "https://picsum.photos/seed/salchipapas/400/300",
       "adicionales": []
@@ -37,6 +63,7 @@
       "id": 4,
       "slug": "twister",
       "nombre": "Twister",
+      "categoriaSlug": "comidas",
       "descripcion": "Tortillas enrolladas con rellenos deliciosos",
       "imagen": "https://picsum.photos/seed/twister/400/300",
       "adicionales": []
@@ -45,6 +72,7 @@
       "id": 5,
       "slug": "broaster",
       "nombre": "Pollo Broaster",
+      "categoriaSlug": "comidas",
       "descripcion": "Incluye arroz + papas fritas + ensalada",
       "imagen": "https://picsum.photos/seed/broaster/400/300",
       "adicionales": []
@@ -53,6 +81,7 @@
       "id": 6,
       "slug": "mostrito",
       "nombre": "Mostrito",
+      "categoriaSlug": "comidas",
       "descripcion": "Chaufa, papas y ensalada",
       "imagen": "https://picsum.photos/seed/mostrito/400/300",
       "adicionales": []
@@ -61,6 +90,7 @@
       "id": 7,
       "slug": "especialidades",
       "nombre": "Especialidades",
+      "categoriaSlug": "comidas",
       "descripcion": "Incluye arroz + papas fritas",
       "imagen": "https://picsum.photos/seed/especialidades/400/300",
       "adicionales": []
@@ -69,6 +99,7 @@
       "id": 8,
       "slug": "combos",
       "nombre": "Combos, Fuentes y Extras",
+      "categoriaSlug": "combos",
       "descripcion": "Fuentes, combos y tequeños",
       "imagen": "https://picsum.photos/seed/combos/400/300",
       "adicionales": []
@@ -77,6 +108,7 @@
       "id": 9,
       "slug": "promos",
       "nombre": "Promociones",
+      "categoriaSlug": "combos",
       "descripcion": "Promociones especiales por tiempo limitado",
       "imagen": "https://picsum.photos/seed/promos/400/300",
       "adicionales": []
@@ -85,6 +117,7 @@
       "id": 10,
       "slug": "frappuccino",
       "nombre": "Frappuccino",
+      "categoriaSlug": "bebidas",
       "descripcion": "Frappuccinos grandes helados",
       "imagen": "https://picsum.photos/seed/frappuccino/400/300",
       "adicionales": []
@@ -93,6 +126,7 @@
       "id": 11,
       "slug": "milkshake",
       "nombre": "Milkshake",
+      "categoriaSlug": "bebidas",
       "descripcion": "Batidos cremosos con sabores irresistibles",
       "imagen": "https://picsum.photos/seed/milkshake/400/300",
       "adicionales": []
@@ -101,6 +135,7 @@
       "id": 12,
       "slug": "frozen",
       "nombre": "Frozen",
+      "categoriaSlug": "bebidas",
       "descripcion": "Bebidas congeladas en ½L y 1L",
       "imagen": "https://picsum.photos/seed/frozen/400/300",
       "adicionales": []
@@ -109,6 +144,7 @@
       "id": 13,
       "slug": "refrescos",
       "nombre": "Refrescos",
+      "categoriaSlug": "bebidas",
       "descripcion": "Refrescos en ½L y 1L",
       "imagen": "https://picsum.photos/seed/refrescos/400/300",
       "adicionales": []
@@ -117,6 +153,7 @@
       "id": 14,
       "slug": "jugos",
       "nombre": "Jugos Naturales",
+      "categoriaSlug": "bebidas",
       "descripcion": "Jugos naturales frescos",
       "imagen": "https://picsum.photos/seed/jugos/400/300",
       "adicionales": []
@@ -125,6 +162,7 @@
       "id": 15,
       "slug": "jugos-leche",
       "nombre": "Jugos con Leche",
+      "categoriaSlug": "bebidas",
       "descripcion": "Jugos naturales con leche",
       "imagen": "https://picsum.photos/seed/jugos-leche/400/300",
       "adicionales": []
@@ -133,6 +171,7 @@
       "id": 16,
       "slug": "jugos-especiales",
       "nombre": "Jugos Especiales",
+      "categoriaSlug": "bebidas",
       "descripcion": "Jugos combinados y especiales",
       "imagen": "https://picsum.photos/seed/jugos-especiales/400/300",
       "adicionales": []
@@ -141,6 +180,7 @@
       "id": 17,
       "slug": "yogurt-en-copa",
       "nombre": "Yogurt en Copa",
+      "categoriaSlug": "bebidas",
       "descripcion": "Yogurt fresco con frutas y granola",
       "imagen": "https://picsum.photos/seed/yogurt-copa/400/300",
       "adicionales": []
@@ -149,6 +189,7 @@
       "id": 18,
       "slug": "cafeteria",
       "nombre": "Cafetería e Infusiones",
+      "categoriaSlug": "bebidas",
       "descripcion": "Cafés, chocolates e infusiones",
       "imagen": "https://picsum.photos/seed/cafeteria/400/300",
       "adicionales": []
@@ -157,6 +198,7 @@
       "id": 19,
       "slug": "adicionales",
       "nombre": "Adicionales",
+      "categoriaSlug": "adicionales",
       "descripcion": "Extras para tu pedido",
       "imagen": "https://picsum.photos/seed/adicionales/400/300",
       "adicionales": []
@@ -165,7 +207,7 @@
   "platillos": [
     {
       "id": 101,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "Clásica",
       "descripcion": "Carne",
       "precio": 8.0,
@@ -173,7 +215,7 @@
     },
     {
       "id": 102,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "Royal",
       "descripcion": "Carne + queso + huevo",
       "precio": 12.0,
@@ -181,7 +223,7 @@
     },
     {
       "id": 103,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "Americana",
       "descripcion": "Carne + queso",
       "precio": 10.0,
@@ -189,7 +231,7 @@
     },
     {
       "id": 104,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "Especial",
       "descripcion": "Carne + chorizo",
       "precio": 10.0,
@@ -197,7 +239,7 @@
     },
     {
       "id": 105,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "La Sabrosa",
       "descripcion": "Carne + huevo + chorizo",
       "precio": 12.0,
@@ -205,7 +247,7 @@
     },
     {
       "id": 106,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "La Humilde",
       "descripcion": "Carne + plátano + huevo",
       "precio": 12.0,
@@ -213,7 +255,7 @@
     },
     {
       "id": 107,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "De Pollo",
       "descripcion": "Pollo deshilachado + queso",
       "precio": 12.0,
@@ -221,7 +263,7 @@
     },
     {
       "id": 108,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "La Imponente",
       "descripcion": "Pechuga a la plancha + queso",
       "precio": 10.0,
@@ -229,7 +271,7 @@
     },
     {
       "id": 109,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "Hawaiana",
       "descripcion": "Carne + queso + piña",
       "precio": 12.0,
@@ -237,7 +279,7 @@
     },
     {
       "id": 110,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "Especial de Pollo",
       "descripcion": "Pollo + huevo + queso",
       "precio": 13.0,
@@ -245,7 +287,7 @@
     },
     {
       "id": 111,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "La Completa",
       "descripcion": "Carne + huevo + queso + chorizo",
       "precio": 15.0,
@@ -253,7 +295,7 @@
     },
     {
       "id": 112,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "La Doble Carne",
       "descripcion": "2 Carnes",
       "precio": 16.0,
@@ -261,7 +303,7 @@
     },
     {
       "id": 113,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "La Doble Carne Especial",
       "descripcion": "2 Carnes + queso + huevo + chorizo",
       "precio": 20.0,
@@ -269,7 +311,7 @@
     },
     {
       "id": 114,
-      "categoriaSlug": "hamburguesas",
+      "subcategoriaSlug": "hamburguesas",
       "titulo": "La Mixta",
       "descripcion": "Carne + Pollo + queso + huevo",
       "precio": 18.0,
@@ -277,7 +319,7 @@
     },
     {
       "id": 201,
-      "categoriaSlug": "sandwiches",
+      "subcategoriaSlug": "sandwiches",
       "titulo": "Simple",
       "descripcion": "Jamón + queso + papa frita",
       "precio": 6.0,
@@ -285,7 +327,7 @@
     },
     {
       "id": 202,
-      "categoriaSlug": "sandwiches",
+      "subcategoriaSlug": "sandwiches",
       "titulo": "Contundente",
       "descripcion": "Jamón + queso + huevo",
       "precio": 6.5,
@@ -293,7 +335,7 @@
     },
     {
       "id": 203,
-      "categoriaSlug": "sandwiches",
+      "subcategoriaSlug": "sandwiches",
       "titulo": "Super",
       "descripcion": "Filete de pollo + jamón + queso + ensalada",
       "precio": 7.5,
@@ -301,7 +343,7 @@
     },
     {
       "id": 204,
-      "categoriaSlug": "sandwiches",
+      "subcategoriaSlug": "sandwiches",
       "titulo": "Natural",
       "descripcion": "Pollo deshilachado + ensalada",
       "precio": 7.5,
@@ -309,7 +351,7 @@
     },
     {
       "id": 205,
-      "categoriaSlug": "sandwiches",
+      "subcategoriaSlug": "sandwiches",
       "titulo": "Chorizo",
       "descripcion": "Chorizo + ensalada",
       "precio": 5.0,
@@ -317,7 +359,7 @@
     },
     {
       "id": 206,
-      "categoriaSlug": "sandwiches",
+      "subcategoriaSlug": "sandwiches",
       "titulo": "Chorizo Full",
       "descripcion": "Chorizo + huevo + ensalada",
       "precio": 7.0,
@@ -325,7 +367,7 @@
     },
     {
       "id": 207,
-      "categoriaSlug": "sandwiches",
+      "subcategoriaSlug": "sandwiches",
       "titulo": "Lomazo de Chancho",
       "descripcion": "Tocino + huevo + queso + papas + ensalada",
       "precio": 7.5,
@@ -333,7 +375,7 @@
     },
     {
       "id": 208,
-      "categoriaSlug": "sandwiches",
+      "subcategoriaSlug": "sandwiches",
       "titulo": "Super Extremo",
       "descripcion": "Pollo deshilachado + huevo + queso",
       "precio": 7.5,
@@ -341,7 +383,7 @@
     },
     {
       "id": 209,
-      "categoriaSlug": "sandwiches",
+      "subcategoriaSlug": "sandwiches",
       "titulo": "Choripán",
       "descripcion": "Choripán clásico",
       "precio": 6.5,
@@ -349,7 +391,7 @@
     },
     {
       "id": 301,
-      "categoriaSlug": "salchipapas",
+      "subcategoriaSlug": "salchipapas",
       "titulo": "Clásica",
       "descripcion": "Hot dog",
       "precio": 8.0,
@@ -357,7 +399,7 @@
     },
     {
       "id": 302,
-      "categoriaSlug": "salchipapas",
+      "subcategoriaSlug": "salchipapas",
       "titulo": "La Natural",
       "descripcion": "Hot dog + huevo",
       "precio": 10.0,
@@ -365,7 +407,7 @@
     },
     {
       "id": 303,
-      "categoriaSlug": "salchipapas",
+      "subcategoriaSlug": "salchipapas",
       "titulo": "La Exclusiva",
       "descripcion": "Hot dog + chorizo",
       "precio": 10.0,
@@ -373,7 +415,7 @@
     },
     {
       "id": 304,
-      "categoriaSlug": "salchipapas",
+      "subcategoriaSlug": "salchipapas",
       "titulo": "La Original",
       "descripcion": "Hot dog + huevo + chorizo",
       "precio": 12.0,
@@ -381,7 +423,7 @@
     },
     {
       "id": 305,
-      "categoriaSlug": "salchipapas",
+      "subcategoriaSlug": "salchipapas",
       "titulo": "La Diferente",
       "descripcion": "Hot dog + huevo + queso",
       "precio": 12.5,
@@ -389,7 +431,7 @@
     },
     {
       "id": 306,
-      "categoriaSlug": "salchipapas",
+      "subcategoriaSlug": "salchipapas",
       "titulo": "La Glotona",
       "descripcion": "Hot dog + cabanossi + chorizo",
       "precio": 13.0,
@@ -397,7 +439,7 @@
     },
     {
       "id": 307,
-      "categoriaSlug": "salchipapas",
+      "subcategoriaSlug": "salchipapas",
       "titulo": "La Full",
       "descripcion": "Hot dog + huevo + queso + chorizo + cabanossi",
       "precio": 15.0,
@@ -405,7 +447,7 @@
     },
     {
       "id": 401,
-      "categoriaSlug": "twister",
+      "subcategoriaSlug": "twister",
       "titulo": "Twister Clásico",
       "descripcion": "Tortilla + pollo crujiente + queso",
       "precio": 10.0,
@@ -413,7 +455,7 @@
     },
     {
       "id": 402,
-      "categoriaSlug": "twister",
+      "subcategoriaSlug": "twister",
       "titulo": "Twister Americano",
       "descripcion": "Tortilla + pollo crujiente + queso + tocino",
       "precio": 12.0,
@@ -421,7 +463,7 @@
     },
     {
       "id": 403,
-      "categoriaSlug": "twister",
+      "subcategoriaSlug": "twister",
       "titulo": "Twister Comelón",
       "descripcion": "Tortilla + pollo crujiente + queso + tocino + chorizo",
       "precio": 13.0,
@@ -429,7 +471,7 @@
     },
     {
       "id": 501,
-      "categoriaSlug": "broaster",
+      "subcategoriaSlug": "broaster",
       "titulo": "Pecho",
       "descripcion": "Pecho de pollo broaster",
       "precio": 10.0,
@@ -437,7 +479,7 @@
     },
     {
       "id": 502,
-      "categoriaSlug": "broaster",
+      "subcategoriaSlug": "broaster",
       "titulo": "Pierna",
       "descripcion": "Pierna de pollo broaster",
       "precio": 9.5,
@@ -445,7 +487,7 @@
     },
     {
       "id": 503,
-      "categoriaSlug": "broaster",
+      "subcategoriaSlug": "broaster",
       "titulo": "Ala",
       "descripcion": "Ala de pollo broaster",
       "precio": 8.5,
@@ -453,7 +495,7 @@
     },
     {
       "id": 504,
-      "categoriaSlug": "broaster",
+      "subcategoriaSlug": "broaster",
       "titulo": "Encuentro",
       "descripcion": "Encuentro de pollo broaster",
       "precio": 9.0,
@@ -461,7 +503,7 @@
     },
     {
       "id": 601,
-      "categoriaSlug": "mostrito",
+      "subcategoriaSlug": "mostrito",
       "titulo": "Pecho / Pierna",
       "descripcion": "Pecho o pierna de pollo con chaufa, papas y ensalada",
       "precio": 13.0,
@@ -469,7 +511,7 @@
     },
     {
       "id": 602,
-      "categoriaSlug": "mostrito",
+      "subcategoriaSlug": "mostrito",
       "titulo": "Ala / Encuentro",
       "descripcion": "Ala o encuentro de pollo con chaufa, papas y ensalada",
       "precio": 12.0,
@@ -477,7 +519,7 @@
     },
     {
       "id": 701,
-      "categoriaSlug": "especialidades",
+      "subcategoriaSlug": "especialidades",
       "titulo": "Pollo a la Plancha",
       "descripcion": "Pollo a la plancha con arroz y papas fritas",
       "precio": 12.9,
@@ -485,7 +527,7 @@
     },
     {
       "id": 702,
-      "categoriaSlug": "especialidades",
+      "subcategoriaSlug": "especialidades",
       "titulo": "Lomo Saltado",
       "descripcion": "Lomo saltado con arroz y papas fritas",
       "precio": 15.0,
@@ -493,7 +535,7 @@
     },
     {
       "id": 703,
-      "categoriaSlug": "especialidades",
+      "subcategoriaSlug": "especialidades",
       "titulo": "Saltado de Pollo",
       "descripcion": "Saltado de pollo con arroz y papas fritas",
       "precio": 14.0,
@@ -501,7 +543,7 @@
     },
     {
       "id": 704,
-      "categoriaSlug": "especialidades",
+      "subcategoriaSlug": "especialidades",
       "titulo": "Lomo Saltado con Chaufa",
       "descripcion": "Lomo saltado con chaufa, arroz y papas fritas",
       "precio": 18.0,
@@ -509,7 +551,7 @@
     },
     {
       "id": 705,
-      "categoriaSlug": "especialidades",
+      "subcategoriaSlug": "especialidades",
       "titulo": "Bisteck a lo Pobre",
       "descripcion": "Bisteck a lo pobre con arroz y papas fritas",
       "precio": 18.0,
@@ -517,7 +559,7 @@
     },
     {
       "id": 706,
-      "categoriaSlug": "especialidades",
+      "subcategoriaSlug": "especialidades",
       "titulo": "Chaufa",
       "descripcion": "Arroz chaufa con arroz y papas fritas",
       "precio": 10.0,
@@ -525,7 +567,7 @@
     },
     {
       "id": 707,
-      "categoriaSlug": "especialidades",
+      "subcategoriaSlug": "especialidades",
       "titulo": "Lomo a lo Pobre",
       "descripcion": "Lomo a lo pobre con arroz y papas fritas",
       "precio": 18.0,
@@ -533,7 +575,7 @@
     },
     {
       "id": 708,
-      "categoriaSlug": "especialidades",
+      "subcategoriaSlug": "especialidades",
       "titulo": "Arroz a la Cubana",
       "descripcion": "Arroz a la cubana con arroz y papas fritas",
       "precio": 10.0,
@@ -541,7 +583,7 @@
     },
     {
       "id": 709,
-      "categoriaSlug": "especialidades",
+      "subcategoriaSlug": "especialidades",
       "titulo": "Pechuga a lo Pobre",
       "descripcion": "Pechuga a lo pobre con arroz y papas fritas",
       "precio": 18.0,
@@ -549,7 +591,7 @@
     },
     {
       "id": 801,
-      "categoriaSlug": "combos",
+      "subcategoriaSlug": "combos",
       "titulo": "Fuente de Nuggets",
       "descripcion": "10 piezas de nuggets + papas fritas",
       "precio": 18.0,
@@ -557,7 +599,7 @@
     },
     {
       "id": 802,
-      "categoriaSlug": "combos",
+      "subcategoriaSlug": "combos",
       "titulo": "Fuente de Alitas",
       "descripcion": "4 alas medianas + papas fritas",
       "precio": 22.0,
@@ -565,7 +607,7 @@
     },
     {
       "id": 803,
-      "categoriaSlug": "combos",
+      "subcategoriaSlug": "combos",
       "titulo": "Alitas a la BBQ",
       "descripcion": "10 piezas + papas fritas",
       "precio": 22.9,
@@ -573,7 +615,7 @@
     },
     {
       "id": 804,
-      "categoriaSlug": "combos",
+      "subcategoriaSlug": "combos",
       "titulo": "Alitas Acevichadas",
       "descripcion": "10 piezas + papas fritas",
       "precio": 22.9,
@@ -581,7 +623,7 @@
     },
     {
       "id": 805,
-      "categoriaSlug": "combos",
+      "subcategoriaSlug": "combos",
       "titulo": "Tequeños",
       "descripcion": "8 unidades de tequeños",
       "precio": 10.0,
@@ -589,7 +631,7 @@
     },
     {
       "id": 806,
-      "categoriaSlug": "combos",
+      "subcategoriaSlug": "combos",
       "titulo": "Combos 1",
       "descripcion": "5 alitas a la BBQ + 5 alitas acevichadas + 4 tequeños",
       "precio": 28.0,
@@ -597,7 +639,7 @@
     },
     {
       "id": 807,
-      "categoriaSlug": "combos",
+      "subcategoriaSlug": "combos",
       "titulo": "Combos 2",
       "descripcion": "5 alitas a la BBQ + 5 alitas acevichadas + 4 tequeños + 5 nuggets",
       "precio": 32.0,
@@ -605,7 +647,7 @@
     },
     {
       "id": 808,
-      "categoriaSlug": "combos",
+      "subcategoriaSlug": "combos",
       "titulo": "Combos 3",
       "descripcion": "3 alitas a la BBQ + 4 alitas acevichadas + 3 tequeños",
       "precio": 25.0,
@@ -613,7 +655,7 @@
     },
     {
       "id": 809,
-      "categoriaSlug": "combos",
+      "subcategoriaSlug": "combos",
       "titulo": "Combos 4",
       "descripcion": "5 alitas a la BBQ + 5 alitas acevichadas + 6 alitas broster + 5 nuggets + 4 tequeños",
       "precio": 40.0,
@@ -621,7 +663,7 @@
     },
     {
       "id": 901,
-      "categoriaSlug": "promos",
+      "subcategoriaSlug": "promos",
       "titulo": "Promo 1 (Opción Acevichadas)",
       "descripcion": "4 acevichadas + chaufa + papas",
       "precio": 18.0,
@@ -629,7 +671,7 @@
     },
     {
       "id": 902,
-      "categoriaSlug": "promos",
+      "subcategoriaSlug": "promos",
       "titulo": "Promo 1 (Opción BBQ)",
       "descripcion": "4 bbq + chaufa + papas",
       "precio": 18.0,
@@ -637,7 +679,7 @@
     },
     {
       "id": 1001,
-      "categoriaSlug": "frappuccino",
+      "subcategoriaSlug": "frappuccino",
       "titulo": "Café",
       "descripcion": "Frappuccino grande de café",
       "precio": 10.0,
@@ -645,7 +687,7 @@
     },
     {
       "id": 1002,
-      "categoriaSlug": "frappuccino",
+      "subcategoriaSlug": "frappuccino",
       "titulo": "Chocolate",
       "descripcion": "Frappuccino grande de chocolate",
       "precio": 10.0,
@@ -653,7 +695,7 @@
     },
     {
       "id": 1003,
-      "categoriaSlug": "frappuccino",
+      "subcategoriaSlug": "frappuccino",
       "titulo": "Fresa",
       "descripcion": "Frappuccino grande de fresa",
       "precio": 11.0,
@@ -661,7 +703,7 @@
     },
     {
       "id": 1004,
-      "categoriaSlug": "frappuccino",
+      "subcategoriaSlug": "frappuccino",
       "titulo": "Oreo",
       "descripcion": "Frappuccino grande de oreo",
       "precio": 11.0,
@@ -669,7 +711,7 @@
     },
     {
       "id": 1005,
-      "categoriaSlug": "frappuccino",
+      "subcategoriaSlug": "frappuccino",
       "titulo": "Caramelo",
       "descripcion": "Frappuccino grande de caramelo",
       "precio": 11.0,
@@ -677,7 +719,7 @@
     },
     {
       "id": 1101,
-      "categoriaSlug": "milkshake",
+      "subcategoriaSlug": "milkshake",
       "titulo": "Oreo",
       "descripcion": "Milkshake de oreo",
       "precio": 11.0,
@@ -685,7 +727,7 @@
     },
     {
       "id": 1102,
-      "categoriaSlug": "milkshake",
+      "subcategoriaSlug": "milkshake",
       "titulo": "Fresa",
       "descripcion": "Milkshake de fresa",
       "precio": 12.0,
@@ -693,7 +735,7 @@
     },
     {
       "id": 1103,
-      "categoriaSlug": "milkshake",
+      "subcategoriaSlug": "milkshake",
       "titulo": "Caramelo",
       "descripcion": "Milkshake de caramelo",
       "precio": 12.0,
@@ -701,7 +743,7 @@
     },
     {
       "id": 1104,
-      "categoriaSlug": "milkshake",
+      "subcategoriaSlug": "milkshake",
       "titulo": "Chocolate",
       "descripcion": "Milkshake de chocolate",
       "precio": 11.0,
@@ -709,7 +751,7 @@
     },
     {
       "id": 1105,
-      "categoriaSlug": "milkshake",
+      "subcategoriaSlug": "milkshake",
       "titulo": "Vainilla",
       "descripcion": "Milkshake de vainilla",
       "precio": 12.0,
@@ -717,7 +759,7 @@
     },
     {
       "id": 1106,
-      "categoriaSlug": "milkshake",
+      "subcategoriaSlug": "milkshake",
       "titulo": "Lúcuma",
       "descripcion": "Milkshake de lúcuma",
       "precio": 12.0,
@@ -725,7 +767,7 @@
     },
     {
       "id": 1107,
-      "categoriaSlug": "milkshake",
+      "subcategoriaSlug": "milkshake",
       "titulo": "Mango",
       "descripcion": "Milkshake de mango",
       "precio": 12.0,
@@ -733,7 +775,7 @@
     },
     {
       "id": 1108,
-      "categoriaSlug": "milkshake",
+      "subcategoriaSlug": "milkshake",
       "titulo": "Guanábana",
       "descripcion": "Milkshake de guanábana",
       "precio": 13.0,
@@ -741,7 +783,7 @@
     },
     {
       "id": 1201,
-      "categoriaSlug": "frozen",
+      "subcategoriaSlug": "frozen",
       "titulo": "Maracuyá ½L",
       "descripcion": "Frozen de maracuyá mediano",
       "precio": 7.0,
@@ -749,7 +791,7 @@
     },
     {
       "id": 1202,
-      "categoriaSlug": "frozen",
+      "subcategoriaSlug": "frozen",
       "titulo": "Maracuyá 1L",
       "descripcion": "Frozen de maracuyá grande",
       "precio": 12.0,
@@ -757,7 +799,7 @@
     },
     {
       "id": 1203,
-      "categoriaSlug": "frozen",
+      "subcategoriaSlug": "frozen",
       "titulo": "Limonada ½L",
       "descripcion": "Frozen de limonada mediano",
       "precio": 7.0,
@@ -765,7 +807,7 @@
     },
     {
       "id": 1204,
-      "categoriaSlug": "frozen",
+      "subcategoriaSlug": "frozen",
       "titulo": "Limonada 1L",
       "descripcion": "Frozen de limonada grande",
       "precio": 12.0,
@@ -773,7 +815,7 @@
     },
     {
       "id": 1205,
-      "categoriaSlug": "frozen",
+      "subcategoriaSlug": "frozen",
       "titulo": "Fresa ½L",
       "descripcion": "Frozen de fresa mediano",
       "precio": 9.0,
@@ -781,7 +823,7 @@
     },
     {
       "id": 1206,
-      "categoriaSlug": "frozen",
+      "subcategoriaSlug": "frozen",
       "titulo": "Fresa 1L",
       "descripcion": "Frozen de fresa grande",
       "precio": 18.0,
@@ -789,7 +831,7 @@
     },
     {
       "id": 1207,
-      "categoriaSlug": "frozen",
+      "subcategoriaSlug": "frozen",
       "titulo": "Piña ½L",
       "descripcion": "Frozen de piña mediano",
       "precio": 9.0,
@@ -797,7 +839,7 @@
     },
     {
       "id": 1208,
-      "categoriaSlug": "frozen",
+      "subcategoriaSlug": "frozen",
       "titulo": "Piña 1L",
       "descripcion": "Frozen de piña grande",
       "precio": 16.0,
@@ -805,7 +847,7 @@
     },
     {
       "id": 1209,
-      "categoriaSlug": "frozen",
+      "subcategoriaSlug": "frozen",
       "titulo": "Guanábana ½L",
       "descripcion": "Frozen de guanábana mediano",
       "precio": 9.0,
@@ -813,7 +855,7 @@
     },
     {
       "id": 1210,
-      "categoriaSlug": "frozen",
+      "subcategoriaSlug": "frozen",
       "titulo": "Guanábana 1L",
       "descripcion": "Frozen de guanábana grande",
       "precio": 18.0,
@@ -821,7 +863,7 @@
     },
     {
       "id": 1301,
-      "categoriaSlug": "refrescos",
+      "subcategoriaSlug": "refrescos",
       "titulo": "Limonada ½L",
       "descripcion": "Refresco de limonada mediano",
       "precio": 5.0,
@@ -829,7 +871,7 @@
     },
     {
       "id": 1302,
-      "categoriaSlug": "refrescos",
+      "subcategoriaSlug": "refrescos",
       "titulo": "Limonada 1L",
       "descripcion": "Refresco de limonada grande",
       "precio": 10.0,
@@ -837,7 +879,7 @@
     },
     {
       "id": 1303,
-      "categoriaSlug": "refrescos",
+      "subcategoriaSlug": "refrescos",
       "titulo": "Maracuyá ½L",
       "descripcion": "Refresco de maracuyá mediano",
       "precio": 5.0,
@@ -845,7 +887,7 @@
     },
     {
       "id": 1304,
-      "categoriaSlug": "refrescos",
+      "subcategoriaSlug": "refrescos",
       "titulo": "Maracuyá 1L",
       "descripcion": "Refresco de maracuyá grande",
       "precio": 10.0,
@@ -853,7 +895,7 @@
     },
     {
       "id": 1401,
-      "categoriaSlug": "jugos",
+      "subcategoriaSlug": "jugos",
       "titulo": "Fresa",
       "descripcion": "Jugo de fresa natural",
       "precio": 7.0,
@@ -861,7 +903,7 @@
     },
     {
       "id": 1402,
-      "categoriaSlug": "jugos",
+      "subcategoriaSlug": "jugos",
       "titulo": "Papaya",
       "descripcion": "Jugo de papaya natural",
       "precio": 6.0,
@@ -869,7 +911,7 @@
     },
     {
       "id": 1403,
-      "categoriaSlug": "jugos",
+      "subcategoriaSlug": "jugos",
       "titulo": "Piña",
       "descripcion": "Jugo de piña natural",
       "precio": 6.0,
@@ -877,7 +919,7 @@
     },
     {
       "id": 1404,
-      "categoriaSlug": "jugos",
+      "subcategoriaSlug": "jugos",
       "titulo": "Melón",
       "descripcion": "Jugo de melón natural",
       "precio": 6.0,
@@ -885,7 +927,7 @@
     },
     {
       "id": 1405,
-      "categoriaSlug": "jugos",
+      "subcategoriaSlug": "jugos",
       "titulo": "Chirimoya",
       "descripcion": "Jugo de chirimoya natural",
       "precio": 8.0,
@@ -893,7 +935,7 @@
     },
     {
       "id": 1406,
-      "categoriaSlug": "jugos",
+      "subcategoriaSlug": "jugos",
       "titulo": "Lúcuma",
       "descripcion": "Jugo de lúcuma natural",
       "precio": 8.0,
@@ -901,7 +943,7 @@
     },
     {
       "id": 1407,
-      "categoriaSlug": "jugos",
+      "subcategoriaSlug": "jugos",
       "titulo": "Mango",
       "descripcion": "Jugo de mango natural",
       "precio": 7.0,
@@ -909,7 +951,7 @@
     },
     {
       "id": 1408,
-      "categoriaSlug": "jugos",
+      "subcategoriaSlug": "jugos",
       "titulo": "Guanábana",
       "descripcion": "Jugo de guanábana natural",
       "precio": 8.0,
@@ -917,7 +959,7 @@
     },
     {
       "id": 1501,
-      "categoriaSlug": "jugos-leche",
+      "subcategoriaSlug": "jugos-leche",
       "titulo": "Fresa c/ leche",
       "descripcion": "Jugo de fresa con leche",
       "precio": 9.0,
@@ -925,7 +967,7 @@
     },
     {
       "id": 1502,
-      "categoriaSlug": "jugos-leche",
+      "subcategoriaSlug": "jugos-leche",
       "titulo": "Papaya c/ leche",
       "descripcion": "Jugo de papaya con leche",
       "precio": 7.0,
@@ -933,7 +975,7 @@
     },
     {
       "id": 1503,
-      "categoriaSlug": "jugos-leche",
+      "subcategoriaSlug": "jugos-leche",
       "titulo": "Melón c/ leche",
       "descripcion": "Jugo de melón con leche",
       "precio": 7.0,
@@ -941,7 +983,7 @@
     },
     {
       "id": 1504,
-      "categoriaSlug": "jugos-leche",
+      "subcategoriaSlug": "jugos-leche",
       "titulo": "Chirimoya c/ leche",
       "descripcion": "Jugo de chirimoya con leche",
       "precio": 9.0,
@@ -949,7 +991,7 @@
     },
     {
       "id": 1505,
-      "categoriaSlug": "jugos-leche",
+      "subcategoriaSlug": "jugos-leche",
       "titulo": "Lúcuma c/ leche",
       "descripcion": "Jugo de lúcuma con leche",
       "precio": 9.0,
@@ -957,7 +999,7 @@
     },
     {
       "id": 1506,
-      "categoriaSlug": "jugos-leche",
+      "subcategoriaSlug": "jugos-leche",
       "titulo": "Mango c/ leche",
       "descripcion": "Jugo de mango con leche",
       "precio": 9.0,
@@ -965,7 +1007,7 @@
     },
     {
       "id": 1507,
-      "categoriaSlug": "jugos-leche",
+      "subcategoriaSlug": "jugos-leche",
       "titulo": "Guanábana c/ leche",
       "descripcion": "Jugo de guanábana con leche",
       "precio": 9.0,
@@ -973,7 +1015,7 @@
     },
     {
       "id": 1508,
-      "categoriaSlug": "jugos-leche",
+      "subcategoriaSlug": "jugos-leche",
       "titulo": "Plátano c/ leche",
       "descripcion": "Jugo de plátano con leche",
       "precio": 6.0,
@@ -981,7 +1023,7 @@
     },
     {
       "id": 1601,
-      "categoriaSlug": "jugos-especiales",
+      "subcategoriaSlug": "jugos-especiales",
       "titulo": "Especial",
       "descripcion": "Jugo especial de la casa",
       "precio": 9.0,
@@ -989,7 +1031,7 @@
     },
     {
       "id": 1602,
-      "categoriaSlug": "jugos-especiales",
+      "subcategoriaSlug": "jugos-especiales",
       "titulo": "Surtido",
       "descripcion": "Jugo surtido de frutas",
       "precio": 8.0,
@@ -997,7 +1039,7 @@
     },
     {
       "id": 1603,
-      "categoriaSlug": "jugos-especiales",
+      "subcategoriaSlug": "jugos-especiales",
       "titulo": "Plátano + Fresa",
       "descripcion": "Jugo combinado de plátano y fresa",
       "precio": 7.0,
@@ -1005,7 +1047,7 @@
     },
     {
       "id": 1604,
-      "categoriaSlug": "jugos-especiales",
+      "subcategoriaSlug": "jugos-especiales",
       "titulo": "Chirimoya + Lúcuma",
       "descripcion": "Jugo combinado de chirimoya y lúcuma",
       "precio": 9.0,
@@ -1013,7 +1055,7 @@
     },
     {
       "id": 1605,
-      "categoriaSlug": "jugos-especiales",
+      "subcategoriaSlug": "jugos-especiales",
       "titulo": "Papaya + Piña",
       "descripcion": "Jugo combinado de papaya y piña",
       "precio": 8.0,
@@ -1021,7 +1063,7 @@
     },
     {
       "id": 1606,
-      "categoriaSlug": "jugos-especiales",
+      "subcategoriaSlug": "jugos-especiales",
       "titulo": "Lúcuma + Fresa",
       "descripcion": "Jugo combinado de lúcuma y fresa",
       "precio": 8.0,
@@ -1029,7 +1071,7 @@
     },
     {
       "id": 1607,
-      "categoriaSlug": "jugos-especiales",
+      "subcategoriaSlug": "jugos-especiales",
       "titulo": "Fresa + Piña",
       "descripcion": "Jugo combinado de fresa y piña",
       "precio": 9.0,
@@ -1037,7 +1079,7 @@
     },
     {
       "id": 1608,
-      "categoriaSlug": "jugos-especiales",
+      "subcategoriaSlug": "jugos-especiales",
       "titulo": "Papaya + Plátano + Leche",
       "descripcion": "Jugo combinado de papaya, plátano y leche",
       "precio": 9.0,
@@ -1045,7 +1087,7 @@
     },
     {
       "id": 1701,
-      "categoriaSlug": "yogurt-en-copa",
+      "subcategoriaSlug": "yogurt-en-copa",
       "titulo": "Yogurt + Cereal + Fruta",
       "descripcion": "Yogurt con cereal y frutas frescas",
       "precio": 8.0,
@@ -1053,7 +1095,7 @@
     },
     {
       "id": 1702,
-      "categoriaSlug": "yogurt-en-copa",
+      "subcategoriaSlug": "yogurt-en-copa",
       "titulo": "Yogurt + Granola + Hojuelas + Miel + Frutas",
       "descripcion": "Yogurt con granola, hojuelas, miel y frutas",
       "precio": 10.0,
@@ -1061,7 +1103,7 @@
     },
     {
       "id": 1801,
-      "categoriaSlug": "cafeteria",
+      "subcategoriaSlug": "cafeteria",
       "titulo": "Americano",
       "descripcion": "50% café + 50% agua",
       "precio": 3.0,
@@ -1069,7 +1111,7 @@
     },
     {
       "id": 1802,
-      "categoriaSlug": "cafeteria",
+      "subcategoriaSlug": "cafeteria",
       "titulo": "Capuccino",
       "descripcion": "50% café + 20% leche + 30% espuma",
       "precio": 7.0,
@@ -1077,7 +1119,7 @@
     },
     {
       "id": 1803,
-      "categoriaSlug": "cafeteria",
+      "subcategoriaSlug": "cafeteria",
       "titulo": "Moka",
       "descripcion": "30% café + 30% leche + 30% espuma + 10% chocolate",
       "precio": 7.0,
@@ -1085,7 +1127,7 @@
     },
     {
       "id": 1804,
-      "categoriaSlug": "cafeteria",
+      "subcategoriaSlug": "cafeteria",
       "titulo": "Café con Leche",
       "descripcion": "50% café + 50% leche",
       "precio": 4.9,
@@ -1093,7 +1135,7 @@
     },
     {
       "id": 1805,
-      "categoriaSlug": "cafeteria",
+      "subcategoriaSlug": "cafeteria",
       "titulo": "Chocolate con Leche",
       "descripcion": "50% chocolate + 50% leche",
       "precio": 4.9,
@@ -1101,7 +1143,7 @@
     },
     {
       "id": 1806,
-      "categoriaSlug": "cafeteria",
+      "subcategoriaSlug": "cafeteria",
       "titulo": "Infusiones (Filtrantes)",
       "descripcion": "Té, anís, manzanilla",
       "precio": 2.0,
@@ -1109,7 +1151,7 @@
     },
     {
       "id": 1901,
-      "categoriaSlug": "adicionales",
+      "subcategoriaSlug": "adicionales",
       "titulo": "Huevo",
       "descripcion": "Huevo frito adicional",
       "precio": 2.0,
@@ -1117,7 +1159,7 @@
     },
     {
       "id": 1902,
-      "categoriaSlug": "adicionales",
+      "subcategoriaSlug": "adicionales",
       "titulo": "Papas",
       "descripcion": "Porción de papas fritas adicionales",
       "precio": 5.0,
@@ -1125,7 +1167,7 @@
     },
     {
       "id": 1903,
-      "categoriaSlug": "adicionales",
+      "subcategoriaSlug": "adicionales",
       "titulo": "Queso",
       "descripcion": "Porción de queso adicional",
       "precio": 2.0,
@@ -1133,7 +1175,7 @@
     },
     {
       "id": 1904,
-      "categoriaSlug": "adicionales",
+      "subcategoriaSlug": "adicionales",
       "titulo": "Arroz",
       "descripcion": "Porción de arroz adicional",
       "precio": 3.0,
@@ -1141,7 +1183,7 @@
     },
     {
       "id": 1905,
-      "categoriaSlug": "adicionales",
+      "subcategoriaSlug": "adicionales",
       "titulo": "Ensalada",
       "descripcion": "Porción de ensalada adicional",
       "precio": 3.0,
@@ -1149,7 +1191,7 @@
     },
     {
       "id": 1906,
-      "categoriaSlug": "adicionales",
+      "subcategoriaSlug": "adicionales",
       "titulo": "Chorizo",
       "descripcion": "Porción de chorizo adicional",
       "precio": 3.0,
@@ -1157,7 +1199,7 @@
     },
     {
       "id": 1907,
-      "categoriaSlug": "adicionales",
+      "subcategoriaSlug": "adicionales",
       "titulo": "Plátano",
       "descripcion": "Porción de plátano adicional",
       "precio": 3.0,
@@ -1165,7 +1207,7 @@
     },
     {
       "id": 1908,
-      "categoriaSlug": "adicionales",
+      "subcategoriaSlug": "adicionales",
       "titulo": "Carne",
       "descripcion": "Porción de carne adicional",
       "precio": 4.0,

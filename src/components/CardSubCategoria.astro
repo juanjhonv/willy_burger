@@ -1,0 +1,39 @@
+---
+import type { SubCategoria } from '../types/menu';
+
+interface Props {
+  subcategoria: SubCategoria;
+}
+
+const { subcategoria } = Astro.props;
+---
+
+<a
+  href={`/subcategoria/${subcategoria.slug}`}
+  class="block no-underline group"
+>
+  <article class="bg-white border-4 border-charcoal p-4 mb-4">
+    <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+      <div class="sm:w-32 sm:h-32 flex-shrink-0">
+        <img
+          src={subcategoria.imagen}
+          alt={subcategoria.nombre}
+          class="w-full h-48 sm:h-full object-cover border-2 border-charcoal"
+          loading="lazy"
+        />
+      </div>
+      <div class="flex-1">
+        <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+          <div>
+            <h3 class="font-display text-lg font-extrabold text-charcoal title-case">
+              {subcategoria.nombre}
+            </h3>
+            <p class="font-body text-sm text-charcoal-light mt-1">
+              {subcategoria.descripcion}
+            </p>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </article>
+</a>
