@@ -12,28 +12,22 @@ const { subcategoria } = Astro.props;
   href={`/subcategoria/${subcategoria.slug}`}
   class="block no-underline group"
 >
-  <article class="bg-white border-4 border-charcoal p-4 mb-4">
-    <div class="flex flex-col sm:flex-row sm:items-start gap-4">
-      <div class="sm:w-32 sm:h-32 flex-shrink-0">
-        <img
-          src={subcategoria.imagen}
-          alt={subcategoria.nombre}
-          class="w-full h-48 sm:h-full object-cover border-2 border-charcoal"
-          loading="lazy"
-        />
-      </div>
-      <div class="flex-1">
-        <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
-          <div>
-            <h3 class="font-display text-lg font-extrabold text-charcoal title-case">
-              {subcategoria.nombre}
-            </h3>
-            <p class="font-body text-sm text-charcoal-light mt-1">
-              {subcategoria.descripcion}
-            </p>
-          </div>
-        </div>      
-      </div>
+  <article class="bg-white border-4 border-charcoal overflow-hidden transition-all duration-200 group-hover:translate-x-1 group-hover:translate-y-1 hard-shadow group-hover:shadow-none h-full">
+    <div class="relative overflow-hidden aspect-[4/3]">
+      <img
+        src={subcategoria.imagen}
+        alt={subcategoria.nombre}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+      />
+    </div>
+    <div class="p-4">
+      <h2 class="font-display text-xl font-extrabold text-charcoal title-case mb-1">
+        {subcategoria.nombre}
+      </h2>
+      <p class="font-body text-sm text-charcoal-light">
+        {subcategoria.descripcion}
+      </p>
     </div>
   </article>
 </a>

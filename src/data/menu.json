@@ -4,21 +4,21 @@
       "id": 1,
       "slug": "comidas",
       "nombre": "Comidas y Platos principales",
-      "descripcion": "Incluyen papas fritas + ensalada",
-      "imagen": "https://picsum.photos/seed/hamburguesas/400/300"
+      "descripcion": "Hamburguesas, salchipapas, especialidades y mas.",
+      "imagen": "/comidas.png"
     },
     {
       "id": 1,
       "slug": "bebidas",
       "nombre": "Bebidas, cafetería y dulces",
-      "descripcion": "Incluyen papas fritas + ensalada",
+      "descripcion": "Frapuccinos, refrescos, jugos y más.",
       "imagen": "https://picsum.photos/seed/hamburguesas/400/300"
     },
     {
       "id": 1,
       "slug": "combos",
       "nombre": "Combos, compartir y adicionales",
-      "descripcion": "Incluyen papas fritas + ensalada",
+      "descripcion": "Promociones y combos para compartir.",
       "imagen": "https://picsum.photos/seed/hamburguesas/400/300"
     }
   ],

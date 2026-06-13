@@ -20,12 +20,12 @@ const subcategorias = menuData.subcategorias.filter(
 <Layout title={`${categoria.nombre} — Willy Burger`}>
   <a
     href="/"
-    class="inline-flex items-center gap-2 font-mono text-sm text-charcoal hover:text-lucha-red transition-colors mb-6 no-underline"
+    class="inline-flex items-center gap-2 font-mono text-sm text-charcoal hover:text-lucha-red transition-colors mb-6 no-underline border"
   >
-    <span class="text-lg">←</span> Volver al menú
+    <span class="text-lg">←</span> Volver al menú.
   </a>
 
-  <div class="mb-8">
+  <div class="mb-8 backdrop-blur-[2px]">
     <h1 class="font-display text-4xl font-extrabold text-charcoal title-case mb-2">
       {categoria.nombre}
     </h1>
