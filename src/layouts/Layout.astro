@@ -20,13 +20,18 @@ const { title, description = 'Menú digital de Willy Burger — Sanguchería tra
     <title>{title}</title>
   </head>
   <body class="min-h-screen flex flex-col ">
-    <header class="bg-lucha-red text-white py-4 px-6 border-b-4 border-charcoal">
+    <header class="bg-lucha-gray-light text-white border-b-4 border-charcoal relative">
       <div class="max-w-6xl mx-auto flex items-center justify-center">
         <a href="/" class="flex items-center gap-3 no-underline">
           <!-- <span class="font-display text-2xl font-extrabold tracking-tight">WILLY BURGER</span> -->
-           <img src="/willy_burger_logo.svg" width="100" alt="logo" />
+          <img src="/logo_willy.svg" width="120" alt="logo" />
         </a>
       </div>
+      <div class="bg-[url('/cinta_comida.svg')] bg-repeat-x absolute top-0 w-full h-10 z-10">
+      </div>
+      <div class="font-bold text-sm">NUESTRO MENU</div>
+      <!-- <div class="absolute bg-[url('/adhesivo.jpg')] bg-repeat mix-blend-multiply w-full h-full border z-10 top-0">
+      </div> -->
     </header>
 
     <main class="flex-1 max-w-6xl mx-auto w-full px-4 py-8">
@@ -40,3 +45,10 @@ const { title, description = 'Menú digital de Willy Burger — Sanguchería tra
     </footer>
   </body>
 </html>
+<style>
+  header{
+    /* mask-image: url('adhesivo.jpg');
+    mask-size: cover;
+    mask-mode: luminance; */
+  }
+</style>

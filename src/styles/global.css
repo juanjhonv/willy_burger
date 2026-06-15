@@ -8,6 +8,7 @@
   --color-lucha-red: #e30613;
   --color-lucha-red-dark: #b5000b;
   --color-lucha-red-light: #ff5a5f;
+  --color-lucha-gray-light: #a9a9a9;
 
   --color-artisan-gold: #c69c6d;
   --color-artisan-gold-light: #fecf9c;
@@ -26,6 +27,10 @@
   --font-display: "Anybody", sans-serif;
   --font-body: "Work Sans", sans-serif;
   --font-mono: "Space Mono", monospace;
+
+  /* Borders */
+  --border-color-juan: green;
+  --border-width-juan2: 5px;
 }
 
 /* Para navegadores basados en WebKit (Chrome, Edge, Safari, Brave, etc.) */
