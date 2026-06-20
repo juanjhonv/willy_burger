@@ -1,4 +1,6 @@
 ---
+import NavBar from '../components/NavBar.astro';
+import Carrousel from '../components/Carrousel.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -19,25 +21,22 @@ const { title, description = 'Menú digital de Willy Burger — Sanguchería tra
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
-  <body class="min-h-screen flex flex-col ">
-    <header class="bg-lucha-gray-light text-white border-b-4 border-charcoal relative">
+  <body class="min-h-screen flex flex-col relative">
+    <NavBar/>
+    <Carrousel />
+    <!-- <header class="bg-lucha-gray-light text-white border-b-4 border-charcoal relative">
       <div class="max-w-6xl mx-auto flex items-center justify-center">
         <a href="/" class="flex items-center gap-3 no-underline">
-          <!-- <span class="font-display text-2xl font-extrabold tracking-tight">WILLY BURGER</span> -->
           <img src="/logo_willy.svg" width="120" alt="logo" />
         </a>
       </div>
       <div class="bg-[url('/cinta_comida.svg')] bg-repeat-x absolute top-0 w-full h-10 z-10">
       </div>
       <div class="font-bold text-sm">NUESTRO MENU</div>
-      <!-- <div class="absolute bg-[url('/adhesivo.jpg')] bg-repeat mix-blend-multiply w-full h-full border z-10 top-0">
-      </div> -->
-    </header>
-
+    </header> -->
     <main class="flex-1 max-w-6xl mx-auto w-full px-4 py-8">
       <slot />
     </main>
-
     <footer class="bg-charcoal text-white py-6 px-6 border-t-4 border-lucha-red">
       <div class="max-w-6xl mx-auto text-center">
         <p class="font-mono text-sm opacity-80">© 2026 Willy Burger — Lima, Perú</p>

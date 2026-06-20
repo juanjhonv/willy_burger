@@ -1,0 +1,54 @@
+---
+---
+<script>
+  import { gsap } from 'gsap'
+  document.addEventListener("DOMContentLoaded",e=>{
+    const menu_hamburger = document.getElementById('menu-hamburger')
+    const menu_mobil = document.getElementById('menu-mobil')
+    menu_hamburger?.addEventListener('click',e=>{
+      console.log("Dentro")
+      if(e.target instanceof HTMLElement){
+        const open = parseInt(e.target.dataset.open ?? '0')
+        console.log(open)
+        gsap.to(menu_mobil,{
+          x: open ? -200 : 0,
+          duration:.25,
+          onComplete:()=>{
+            menu_hamburger.dataset.open = open ? '0' : '1'
+          }
+        })
+      }
+    })
+  })
+</script>
+<header class="sticky top-0 z-10 bg-lucha-red-dark bg-[url('/back_food.svg')] bg-repeat-x bg-size-[250px]">
+  <div class="w-full h-auto relative z-2">
+    <!-- <div class="absolute w-full top-0 h-10 bg-[url('/back_food.svg')] bg-repeat-x bg-size-[250px]"></div> -->
+    <div class="w-full lg:w-9/12 mx-auto flex justify-between items-center text-white py-2 px-2">
+      <div class="">
+        <img src="/logowilly.svg" alt="logo" class="w-15 md:w-20" />
+      </div>
+      <nav class="hidden md:flex gap-4 [&>span]:border-0">
+        <span>NOSOTROS</span>
+        <span>PROMOCIONES</span>
+        <span>MENU</span>
+        <span>LOCALES</span>
+      </nav>
+      <div id="menu-hamburger" data-open="0" class="w-10 h-auto relative cursor-pointer">
+        <div class="w-10 h-auto flex flex-col md:hidden gap-1 [&>div]:h-1 [&>div]:bg-lucha-gray-sticker relative">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <!-- <div class="w-10 h-full flex flex-col justify-center md:hidden -gap-1 [&>div]:h-1 [&>div]:bg-green-500 cursor-pointer absolute top-0 border">
+          <div class="rotate-[45deg] origin-center"></div>
+          <div class="rotate-[-45deg] origin-center"></div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <div id="menu-mobil" class="w-dvw h-svh bg-green-400 absolute top-0 z-1 -translate-x-100 flex justify-end">
+    <div>wsdfsfsf</div>
+  </div>
+</header> 
