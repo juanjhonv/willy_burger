@@ -1,0 +1,56 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CardPlatillo from '../../components/CardPlatillo.astro';
+import menuData from '../../data/menu.json';
+import CardSubCategoria from '../../components/CardSubCategoria.astro';
+
+export function getStaticPaths() {
+  return menuData.subcategorias.map((subcategoria) => ({
+    params: { slug: subcategoria.slug },
+    props: { subcategoria },
+  }));
+}
+
+const { subcategoria } = Astro.props;
+const platillos = menuData.platillos.filter(
+  (p) => p.subcategoriaSlug === subcategoria.slug
+);
+---
+
+<Layout title={`${subcategoria.nombre} — Willy Burger`}>
+  <a
+    href={"/categoria/"+subcategoria.categoriaSlug}
+    class="inline-flex items-center gap-2 font-mono text-sm text-charcoal hover:text-lucha-red transition-colors mb-6 no-underline"
+  >
+    <span class="text-lg">←</span> Volver al menú
+  </a>
+
+  <div class="mb-8">
+    <h1 class="font-display text-4xl font-extrabold text-charcoal title-case mb-2">
+      {subcategoria.nombre}
+    </h1>
+    <p class="font-body text-lg text-charcoal-light">
+      {subcategoria.descripcion}
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    {platillos.map((platillo) => (
+      <CardPlatillo platillo={platillo} />
+    ))}
+  </div>
+  {subcategoria.adicionales.length > 0 && (
+    <div class="mt-3 pt-3 border-t-2 border-dashed border-artisan-gold">
+      <p class="font-mono text-xs font-bold text-artisan-gold title-case mb-1">
+        Adicionales
+      </p>
+      <ul class="flex flex-wrap gap-2">
+        {subcategoria.adicionales.map((adicional) => (
+          <li class="bg-artisan-gold-light text-charcoal text-xs font-mono px-2 py-1 border border-artisan-gold">
+            {adicional.nombre} + S/ {adicional.precio.toFixed(2)}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</Layout>

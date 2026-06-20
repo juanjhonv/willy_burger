@@ -2,539 +2,1216 @@
   "categorias": [
     {
       "id": 1,
-      "slug": "frappuccino",
-      "nombre": "Frappuccino",
-      "descripcion": "Bebidas heladas y cremosas para refrescarte",
-      "imagen": "https://picsum.photos/seed/frappuccino/400/300"
+      "slug": "comidas",
+      "nombre": "Comidas y Platos principales",
+      "descripcion": "Hamburguesas, salchipapas, especialidades y mas.",
+      "imagen": "/comidas.png"
     },
     {
-      "id": 2,
-      "slug": "milkshake",
-      "nombre": "Milshake",
-      "descripcion": "Batidos cremosos con sabores irresistibles",
-      "imagen": "https://picsum.photos/seed/milkshake/400/300"
-    },
-    {
-      "id": 3,
-      "slug": "twister",
-      "nombre": "Twister",
-      "descripcion": "Tortillas enrolladas con rellenos deliciosos",
-      "imagen": "https://picsum.photos/seed/twister/400/300"
-    },
-    {
-      "id": 4,
-      "slug": "sandwiches",
-      "nombre": "Sandwiches",
-      "descripcion": "Sándwiches preparados con ingredientes frescos",
-      "imagen": "https://picsum.photos/seed/sandwiches/400/300"
-    },
-    {
-      "id": 5,
-      "slug": "hamburguesas",
-      "nombre": "Hamburguesas",
-      "descripcion": "Nuestras famosas hamburguesas artesanales",
+      "id": 1,
+      "slug": "bebidas",
+      "nombre": "Bebidas, cafetería y dulces",
+      "descripcion": "Frapuccinos, refrescos, jugos y más.",
       "imagen": "https://picsum.photos/seed/hamburguesas/400/300"
     },
     {
+      "id": 1,
+      "slug": "combos",
+      "nombre": "Combos, compartir y adicionales",
+      "descripcion": "Promociones y combos para compartir.",
+      "imagen": "https://picsum.photos/seed/hamburguesas/400/300"
+    }
+  ],
+  "subcategorias": [
+    {
+      "id": 1,
+      "slug": "hamburguesas",
+      "nombre": "Hamburguesas",
+      "categoriaSlug": "comidas",
+      "descripcion": "Incluyen papas fritas + ensalada",
+      "imagen": "https://picsum.photos/seed/hamburguesas/400/300",
+      "adicionales": [
+        { "nombre": "Huevo", "precio": 2.0 },
+        { "nombre": "Papas", "precio": 5.0 },
+        { "nombre": "Queso", "precio": 2.0 },
+        { "nombre": "Arroz", "precio": 3.0 },
+        { "nombre": "Ensalada", "precio": 3.0 },
+        { "nombre": "Chorizo", "precio": 3.0 },
+        { "nombre": "Plátano", "precio": 3.0 },
+        { "nombre": "Carne", "precio": 4.0 }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "sandwiches",
+      "nombre": "Sándwiches",
+      "categoriaSlug": "comidas",
+      "descripcion": "Sándwiches preparados con ingredientes frescos",
+      "imagen": "https://picsum.photos/seed/sandwiches/400/300",
+      "adicionales": []
+    },
+    {
+      "id": 3,
+      "slug": "salchipapas",
+      "nombre": "Salchipapas",
+      "categoriaSlug": "comidas",
+      "descripcion": "Incluyen papas fritas + ensalada",
+      "imagen": "https://picsum.photos/seed/salchipapas/400/300",
+      "adicionales": []
+    },
+    {
+      "id": 4,
+      "slug": "twister",
+      "nombre": "Twister",
+      "categoriaSlug": "comidas",
+      "descripcion": "Tortillas enrolladas con rellenos deliciosos",
+      "imagen": "https://picsum.photos/seed/twister/400/300",
+      "adicionales": []
+    },
+    {
+      "id": 5,
+      "slug": "broaster",
+      "nombre": "Pollo Broaster",
+      "categoriaSlug": "comidas",
+      "descripcion": "Incluye arroz + papas fritas + ensalada",
+      "imagen": "https://picsum.photos/seed/broaster/400/300",
+      "adicionales": []
+    },
+    {
       "id": 6,
-      "slug": "adicionales",
-      "nombre": "Adicionales",
-      "descripcion": "Acompañamientos extras para tu pedido",
-      "imagen": "https://picsum.photos/seed/adicionales/400/300"
+      "slug": "mostrito",
+      "nombre": "Mostrito",
+      "categoriaSlug": "comidas",
+      "descripcion": "Chaufa, papas y ensalada",
+      "imagen": "https://picsum.photos/seed/mostrito/400/300",
+      "adicionales": []
     },
     {
       "id": 7,
-      "slug": "salchipapas",
-      "nombre": "Salchipapas",
-      "descripcion": "Clásicas salchipapas con variedad de salsas",
-      "imagen": "https://picsum.photos/seed/salchipapas/400/300"
+      "slug": "especialidades",
+      "nombre": "Especialidades",
+      "categoriaSlug": "comidas",
+      "descripcion": "Incluye arroz + papas fritas",
+      "imagen": "https://picsum.photos/seed/especialidades/400/300",
+      "adicionales": []
     },
     {
       "id": 8,
-      "slug": "broaster",
-      "nombre": "Broaster",
-      "descripcion": "Pollo crujiente al estilo broaster",
-      "imagen": "https://picsum.photos/seed/broaster/400/300"
+      "slug": "combos",
+      "nombre": "Combos, Fuentes y Extras",
+      "categoriaSlug": "combos",
+      "descripcion": "Fuentes, combos y tequeños",
+      "imagen": "https://picsum.photos/seed/combos/400/300",
+      "adicionales": []
     },
     {
       "id": 9,
-      "slug": "mostrito",
-      "nombre": "Mostrito",
-      "descripcion": "Bebidas refrescantes de mostrito",
-      "imagen": "https://picsum.photos/seed/mostrito/400/300"
+      "slug": "promos",
+      "nombre": "Promociones",
+      "categoriaSlug": "combos",
+      "descripcion": "Promociones especiales por tiempo limitado",
+      "imagen": "https://picsum.photos/seed/promos/400/300",
+      "adicionales": []
     },
     {
       "id": 10,
-      "slug": "especialidad",
-      "nombre": "Especialidad",
-      "descripcion": "Platos especiales de la casa",
-      "imagen": "https://picsum.photos/seed/especialidad/400/300"
+      "slug": "frappuccino",
+      "nombre": "Frappuccino",
+      "categoriaSlug": "bebidas",
+      "descripcion": "Frappuccinos grandes helados",
+      "imagen": "https://picsum.photos/seed/frappuccino/400/300",
+      "adicionales": []
     },
     {
       "id": 11,
-      "slug": "jugos",
-      "nombre": "Jugos",
-      "descripcion": "Jugos naturales y refrescantes",
-      "imagen": "https://picsum.photos/seed/jugos/400/300"
+      "slug": "milkshake",
+      "nombre": "Milkshake",
+      "categoriaSlug": "bebidas",
+      "descripcion": "Batidos cremosos con sabores irresistibles",
+      "imagen": "https://picsum.photos/seed/milkshake/400/300",
+      "adicionales": []
     },
     {
       "id": 12,
-      "slug": "refrescos",
-      "nombre": "Refrescos",
-      "descripcion": "Bebidas gaseosas para acompañar",
-      "imagen": "https://picsum.photos/seed/refrescos/400/300"
+      "slug": "frozen",
+      "nombre": "Frozen",
+      "categoriaSlug": "bebidas",
+      "descripcion": "Bebidas congeladas en ½L y 1L",
+      "imagen": "https://picsum.photos/seed/frozen/400/300",
+      "adicionales": []
     },
     {
       "id": 13,
-      "slug": "yogurt-en-copa",
-      "nombre": "Yogurt en copa",
-      "descripcion": "Yogurt fresco con frutas y granola",
-      "imagen": "https://picsum.photos/seed/yogurt-copa/400/300"
+      "slug": "refrescos",
+      "nombre": "Refrescos",
+      "categoriaSlug": "bebidas",
+      "descripcion": "Refrescos en ½L y 1L",
+      "imagen": "https://picsum.photos/seed/refrescos/400/300",
+      "adicionales": []
     },
     {
       "id": 14,
-      "slug": "combos",
-      "nombre": "Combos",
-      "descripcion": "Combos completos para compartir",
-      "imagen": "https://picsum.photos/seed/combos/400/300"
+      "slug": "jugos",
+      "nombre": "Jugos Naturales",
+      "categoriaSlug": "bebidas",
+      "descripcion": "Jugos naturales frescos",
+      "imagen": "https://picsum.photos/seed/jugos/400/300",
+      "adicionales": []
     },
     {
       "id": 15,
-      "slug": "promos",
-      "nombre": "Promos",
-      "descripcion": "Promociones especiales por tiempo limitado",
-      "imagen": "https://picsum.photos/seed/promos/400/300"
+      "slug": "jugos-leche",
+      "nombre": "Jugos con Leche",
+      "categoriaSlug": "bebidas",
+      "descripcion": "Jugos naturales con leche",
+      "imagen": "https://picsum.photos/seed/jugos-leche/400/300",
+      "adicionales": []
     },
     {
       "id": 16,
-      "slug": "extra",
-      "nombre": "Extra",
-      "descripcion": "Extras y adicionales para tu pedido",
-      "imagen": "https://picsum.photos/seed/extra/400/300"
+      "slug": "jugos-especiales",
+      "nombre": "Jugos Especiales",
+      "categoriaSlug": "bebidas",
+      "descripcion": "Jugos combinados y especiales",
+      "imagen": "https://picsum.photos/seed/jugos-especiales/400/300",
+      "adicionales": []
     },
     {
       "id": 17,
-      "slug": "frozen",
-      "nombre": "Frozen",
-      "descripcion": "Bebidas congeladas para el día de calor",
-      "imagen": "https://picsum.photos/seed/frozen/400/300"
+      "slug": "yogurt-en-copa",
+      "nombre": "Yogurt en Copa",
+      "categoriaSlug": "bebidas",
+      "descripcion": "Yogurt fresco con frutas y granola",
+      "imagen": "https://picsum.photos/seed/yogurt-copa/400/300",
+      "adicionales": []
+    },
+    {
+      "id": 18,
+      "slug": "cafeteria",
+      "nombre": "Cafetería e Infusiones",
+      "categoriaSlug": "bebidas",
+      "descripcion": "Cafés, chocolates e infusiones",
+      "imagen": "https://picsum.photos/seed/cafeteria/400/300",
+      "adicionales": []
+    },
+    {
+      "id": 19,
+      "slug": "adicionales",
+      "nombre": "Adicionales",
+      "categoriaSlug": "adicionales",
+      "descripcion": "Extras para tu pedido",
+      "imagen": "https://picsum.photos/seed/adicionales/400/300",
+      "adicionales": []
     }
   ],
   "platillos": [
     {
       "id": 101,
-      "categoriaSlug": "frappuccino",
-      "titulo": "Frappuccino de Vainilla",
-      "descripcion": "Cremoso frappuccino de vainilla con crema batida y chispas de chocolate.",
-      "precio": 15.0,
-      "adicionales": [
-        { "nombre": "Extra crema", "precio": 2.0 },
-        { "nombre": "Extra shot espresso", "precio": 3.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/frapp-vainilla/400/300"
-    },
-    {
-      "id": 102,
-      "categoriaSlug": "frappuccino",
-      "titulo": "Frappuccino de Mocha",
-      "descripcion": "Mezcla perfecta de café, chocolate y leche helada con crema batida.",
-      "precio": 16.0,
-      "adicionales": [
-        { "nombre": "Extra chocolate", "precio": 2.0 },
-        { "nombre": "Extra shot espresso", "precio": 3.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/frapp-mocha/400/300"
-    },
-    {
-      "id": 103,
-      "categoriaSlug": "frappuccino",
-      "titulo": "Frappuccino de Fresa",
-      "descripcion": "Batido helado de fresa natural con crema batida y trozos de fruta.",
-      "precio": 15.0,
-      "adicionales": [
-        { "nombre": "Extra crema", "precio": 2.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/frapp-fresa/400/300"
-    },
-    {
-      "id": 201,
-      "categoriaSlug": "milkshake",
-      "titulo": "Milkshake de Chocolate",
-      "descripcion": "Clásico milkshake de chocolate con helado de vainilla y crema batida.",
-      "precio": 14.0,
-      "adicionales": [
-        { "nombre": "Extra helado", "precio": 3.0 },
-        { "nombre": "Extra crema", "precio": 2.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/shake-choco/400/300"
-    },
-    {
-      "id": 202,
-      "categoriaSlug": "milkshake",
-      "titulo": "Milkshake de Vainilla",
-      "descripcion": "Milkshake cremoso de vainilla con chispas de colores y crema batida.",
-      "precio": 14.0,
-      "adicionales": [
-        { "nombre": "Extra helado", "precio": 3.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/shake-vainilla/400/300"
-    },
-    {
-      "id": 203,
-      "categoriaSlug": "milkshake",
-      "titulo": "Milkshake de Fresa",
-      "descripcion": "Milkshake de fresa natural, fresco y delicioso con crema batida.",
-      "precio": 14.0,
-      "adicionales": [
-        { "nombre": "Extra helado", "precio": 3.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/shake-fresa/400/300"
-    },
-    {
-      "id": 301,
-      "categoriaSlug": "twister",
-      "titulo": "Twister de Pollo",
-      "descripcion": "Tortilla crujiente con pollo empanizado, lechuga, tomate y aderezo especial.",
-      "precio": 18.0,
-      "adicionales": [
-        { "nombre": "Extra pollo", "precio": 5.0 },
-        { "nombre": "Extra aderezo", "precio": 2.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/twister-pollo/400/300"
-    },
-    {
-      "id": 302,
-      "categoriaSlug": "twister",
-      "titulo": "Twister de Res",
-      "descripcion": "Tortilla con carne de res sazonada, queso, lechuga y salsa de la casa.",
-      "precio": 20.0,
-      "adicionales": [
-        { "nombre": "Extra carne", "precio": 6.0 },
-        { "nombre": "Extra queso", "precio": 3.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/twister-res/400/300"
-    },
-    {
-      "id": 401,
-      "categoriaSlug": "sandwiches",
-      "titulo": "Sándwich de Pollo",
-      "descripcion": "Pechuga de pollo a la plancha, lechuga, tomate y mayonesa en pan tostado.",
-      "precio": 16.0,
-      "adicionales": [
-        { "nombre": "Extra queso", "precio": 3.0 },
-        { "nombre": "Extra bacon", "precio": 4.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/sand-pollo/400/300"
-    },
-    {
-      "id": 402,
-      "categoriaSlug": "sandwiches",
-      "titulo": "Sándwich de Jamón y Queso",
-      "descripcion": "Clásico sándwich de jamón y queso derretido con lechuga y tomate.",
-      "precio": 14.0,
-      "adicionales": [
-        { "nombre": "Extra queso", "precio": 3.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/sand-jamon/400/300"
-    },
-    {
-      "id": 501,
-      "categoriaSlug": "hamburguesas",
-      "titulo": "Hamburguesa Clásica",
-      "descripcion": "Carne de res 200g, lechuga, tomate, cebolla y salsa especial.",
-      "precio": 25.0,
-      "adicionales": [
-        { "nombre": "Extra queso cheddar", "precio": 4.0 },
-        { "nombre": "Extra bacon", "precio": 5.0 },
-        { "nombre": "Papas fritas", "precio": 8.0 }
-      ],
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "Clásica",
+      "descripcion": "Carne",
+      "precio": 8.0,
       "imagen": "https://picsum.photos/seed/burger-clasica/400/300"
     },
     {
-      "id": 502,
-      "categoriaSlug": "hamburguesas",
-      "titulo": "Hamburguesa Doble",
-      "descripcion": "Doble carne de res 400g con doble queso, lechuga, tomate y salsa especial.",
-      "precio": 38.0,
-      "adicionales": [
-        { "nombre": "Extra bacon", "precio": 5.0 },
-        { "nombre": "Papas fritas", "precio": 8.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/burger-doble/400/300"
+      "id": 102,
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "Royal",
+      "descripcion": "Carne + queso + huevo",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/burger-royal/400/300"
     },
     {
-      "id": 503,
-      "categoriaSlug": "hamburguesas",
-      "titulo": "Hamburguesa de Pollo",
-      "descripcion": "Pechuga de pollo empanizada con lechuga, tomate y mayonesa.",
-      "precio": 22.0,
-      "adicionales": [
-        { "nombre": "Extra queso", "precio": 4.0 },
-        { "nombre": "Papas fritas", "precio": 8.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/burger-pollo-nueva/400/300"
-    },
-    {
-      "id": 601,
-      "categoriaSlug": "adicionales",
-      "titulo": "Papas Fritas",
-      "descripcion": "Porción de papas fritas crujientes y doradas.",
+      "id": 103,
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "Americana",
+      "descripcion": "Carne + queso",
       "precio": 10.0,
-      "adicionales": [
-        { "nombre": "Extra queso cheddar", "precio": 4.0 },
-        { "nombre": "Extra bacon", "precio": 5.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/papas-fritas/400/300"
+      "imagen": "https://picsum.photos/seed/burger-americana/400/300"
     },
     {
-      "id": 602,
-      "categoriaSlug": "adicionales",
-      "titulo": "Arroz con Huevo",
-      "descripcion": "Porción de arroz blanco con huevo frito encima.",
-      "precio": 8.0,
-      "adicionales": [],
-      "imagen": "https://picsum.photos/seed/arroz-huevo/400/300"
+      "id": 104,
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "Especial",
+      "descripcion": "Carne + chorizo",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/burger-especial/400/300"
     },
     {
-      "id": 701,
-      "categoriaSlug": "salchipapas",
-      "titulo": "Salchipapa Clásica",
-      "descripcion": "Salchichas frescas con papas fritas, acompañadas de ketchup y mostaza.",
+      "id": 105,
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "La Sabrosa",
+      "descripcion": "Carne + huevo + chorizo",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/burger-sabrosa/400/300"
+    },
+    {
+      "id": 106,
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "La Humilde",
+      "descripcion": "Carne + plátano + huevo",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/burger-humilde/400/300"
+    },
+    {
+      "id": 107,
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "De Pollo",
+      "descripcion": "Pollo deshilachado + queso",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/burger-pollo/400/300"
+    },
+    {
+      "id": 108,
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "La Imponente",
+      "descripcion": "Pechuga a la plancha + queso",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/burger-imponente/400/300"
+    },
+    {
+      "id": 109,
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "Hawaiana",
+      "descripcion": "Carne + queso + piña",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/burger-hawaiana/400/300"
+    },
+    {
+      "id": 110,
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "Especial de Pollo",
+      "descripcion": "Pollo + huevo + queso",
+      "precio": 13.0,
+      "imagen": "https://picsum.photos/seed/burger-especial-pollo/400/300"
+    },
+    {
+      "id": 111,
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "La Completa",
+      "descripcion": "Carne + huevo + queso + chorizo",
       "precio": 15.0,
-      "adicionales": [
-        { "nombre": "Extra salchicha", "precio": 4.0 },
-        { "nombre": "Extra salsa huancaína", "precio": 3.0 }
-      ],
+      "imagen": "https://picsum.photos/seed/burger-completa/400/300"
+    },
+    {
+      "id": 112,
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "La Doble Carne",
+      "descripcion": "2 Carnes",
+      "precio": 16.0,
+      "imagen": "https://picsum.photos/seed/burger-doble-carne/400/300"
+    },
+    {
+      "id": 113,
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "La Doble Carne Especial",
+      "descripcion": "2 Carnes + queso + huevo + chorizo",
+      "precio": 20.0,
+      "imagen": "https://picsum.photos/seed/burger-doble-especial/400/300"
+    },
+    {
+      "id": 114,
+      "subcategoriaSlug": "hamburguesas",
+      "titulo": "La Mixta",
+      "descripcion": "Carne + Pollo + queso + huevo",
+      "precio": 18.0,
+      "imagen": "https://picsum.photos/seed/burger-mixta/400/300"
+    },
+    {
+      "id": 201,
+      "subcategoriaSlug": "sandwiches",
+      "titulo": "Simple",
+      "descripcion": "Jamón + queso + papa frita",
+      "precio": 6.0,
+      "imagen": "https://picsum.photos/seed/sand-simple/400/300"
+    },
+    {
+      "id": 202,
+      "subcategoriaSlug": "sandwiches",
+      "titulo": "Contundente",
+      "descripcion": "Jamón + queso + huevo",
+      "precio": 6.5,
+      "imagen": "https://picsum.photos/seed/sand-contundente/400/300"
+    },
+    {
+      "id": 203,
+      "subcategoriaSlug": "sandwiches",
+      "titulo": "Super",
+      "descripcion": "Filete de pollo + jamón + queso + ensalada",
+      "precio": 7.5,
+      "imagen": "https://picsum.photos/seed/sand-super/400/300"
+    },
+    {
+      "id": 204,
+      "subcategoriaSlug": "sandwiches",
+      "titulo": "Natural",
+      "descripcion": "Pollo deshilachado + ensalada",
+      "precio": 7.5,
+      "imagen": "https://picsum.photos/seed/sand-natural/400/300"
+    },
+    {
+      "id": 205,
+      "subcategoriaSlug": "sandwiches",
+      "titulo": "Chorizo",
+      "descripcion": "Chorizo + ensalada",
+      "precio": 5.0,
+      "imagen": "https://picsum.photos/seed/sand-chorizo/400/300"
+    },
+    {
+      "id": 206,
+      "subcategoriaSlug": "sandwiches",
+      "titulo": "Chorizo Full",
+      "descripcion": "Chorizo + huevo + ensalada",
+      "precio": 7.0,
+      "imagen": "https://picsum.photos/seed/sand-chorizo-full/400/300"
+    },
+    {
+      "id": 207,
+      "subcategoriaSlug": "sandwiches",
+      "titulo": "Lomazo de Chancho",
+      "descripcion": "Tocino + huevo + queso + papas + ensalada",
+      "precio": 7.5,
+      "imagen": "https://picsum.photos/seed/sand-lomazo/400/300"
+    },
+    {
+      "id": 208,
+      "subcategoriaSlug": "sandwiches",
+      "titulo": "Super Extremo",
+      "descripcion": "Pollo deshilachado + huevo + queso",
+      "precio": 7.5,
+      "imagen": "https://picsum.photos/seed/sand-extremo/400/300"
+    },
+    {
+      "id": 209,
+      "subcategoriaSlug": "sandwiches",
+      "titulo": "Choripán",
+      "descripcion": "Choripán clásico",
+      "precio": 6.5,
+      "imagen": "https://picsum.photos/seed/sand-choripan/400/300"
+    },
+    {
+      "id": 301,
+      "subcategoriaSlug": "salchipapas",
+      "titulo": "Clásica",
+      "descripcion": "Hot dog",
+      "precio": 8.0,
       "imagen": "https://picsum.photos/seed/salchi-clasica/400/300"
     },
     {
+      "id": 302,
+      "subcategoriaSlug": "salchipapas",
+      "titulo": "La Natural",
+      "descripcion": "Hot dog + huevo",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/salchi-natural/400/300"
+    },
+    {
+      "id": 303,
+      "subcategoriaSlug": "salchipapas",
+      "titulo": "La Exclusiva",
+      "descripcion": "Hot dog + chorizo",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/salchi-exclusiva/400/300"
+    },
+    {
+      "id": 304,
+      "subcategoriaSlug": "salchipapas",
+      "titulo": "La Original",
+      "descripcion": "Hot dog + huevo + chorizo",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/salchi-original/400/300"
+    },
+    {
+      "id": 305,
+      "subcategoriaSlug": "salchipapas",
+      "titulo": "La Diferente",
+      "descripcion": "Hot dog + huevo + queso",
+      "precio": 12.5,
+      "imagen": "https://picsum.photos/seed/salchi-diferente/400/300"
+    },
+    {
+      "id": 306,
+      "subcategoriaSlug": "salchipapas",
+      "titulo": "La Glotona",
+      "descripcion": "Hot dog + cabanossi + chorizo",
+      "precio": 13.0,
+      "imagen": "https://picsum.photos/seed/salchi-glotona/400/300"
+    },
+    {
+      "id": 307,
+      "subcategoriaSlug": "salchipapas",
+      "titulo": "La Full",
+      "descripcion": "Hot dog + huevo + queso + chorizo + cabanossi",
+      "precio": 15.0,
+      "imagen": "https://picsum.photos/seed/salchi-full/400/300"
+    },
+    {
+      "id": 401,
+      "subcategoriaSlug": "twister",
+      "titulo": "Twister Clásico",
+      "descripcion": "Tortilla + pollo crujiente + queso",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/twister-clasico/400/300"
+    },
+    {
+      "id": 402,
+      "subcategoriaSlug": "twister",
+      "titulo": "Twister Americano",
+      "descripcion": "Tortilla + pollo crujiente + queso + tocino",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/twister-americano/400/300"
+    },
+    {
+      "id": 403,
+      "subcategoriaSlug": "twister",
+      "titulo": "Twister Comelón",
+      "descripcion": "Tortilla + pollo crujiente + queso + tocino + chorizo",
+      "precio": 13.0,
+      "imagen": "https://picsum.photos/seed/twister-comelon/400/300"
+    },
+    {
+      "id": 501,
+      "subcategoriaSlug": "broaster",
+      "titulo": "Pecho",
+      "descripcion": "Pecho de pollo broaster",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/broaster-pecho/400/300"
+    },
+    {
+      "id": 502,
+      "subcategoriaSlug": "broaster",
+      "titulo": "Pierna",
+      "descripcion": "Pierna de pollo broaster",
+      "precio": 9.5,
+      "imagen": "https://picsum.photos/seed/broaster-pierna/400/300"
+    },
+    {
+      "id": 503,
+      "subcategoriaSlug": "broaster",
+      "titulo": "Ala",
+      "descripcion": "Ala de pollo broaster",
+      "precio": 8.5,
+      "imagen": "https://picsum.photos/seed/broaster-ala/400/300"
+    },
+    {
+      "id": 504,
+      "subcategoriaSlug": "broaster",
+      "titulo": "Encuentro",
+      "descripcion": "Encuentro de pollo broaster",
+      "precio": 9.0,
+      "imagen": "https://picsum.photos/seed/broaster-encuentro/400/300"
+    },
+    {
+      "id": 601,
+      "subcategoriaSlug": "mostrito",
+      "titulo": "Pecho / Pierna",
+      "descripcion": "Pecho o pierna de pollo con chaufa, papas y ensalada",
+      "precio": 13.0,
+      "imagen": "https://picsum.photos/seed/mostrito-pecho/400/300"
+    },
+    {
+      "id": 602,
+      "subcategoriaSlug": "mostrito",
+      "titulo": "Ala / Encuentro",
+      "descripcion": "Ala o encuentro de pollo con chaufa, papas y ensalada",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/mostrito-ala/400/300"
+    },
+    {
+      "id": 701,
+      "subcategoriaSlug": "especialidades",
+      "titulo": "Pollo a la Plancha",
+      "descripcion": "Pollo a la plancha con arroz y papas fritas",
+      "precio": 12.9,
+      "imagen": "https://picsum.photos/seed/especial-pollo-plancha/400/300"
+    },
+    {
       "id": 702,
-      "categoriaSlug": "salchipapas",
-      "titulo": "Salchipapa Especial",
-      "descripcion": "Salchichas con papas fritas, queso derretido, huevo frito y salsa de la casa.",
-      "precio": 20.0,
-      "adicionales": [
-        { "nombre": "Extra huevo", "precio": 3.0 },
-        { "nombre": "Extra queso", "precio": 4.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/salchi-especial/400/300"
+      "subcategoriaSlug": "especialidades",
+      "titulo": "Lomo Saltado",
+      "descripcion": "Lomo saltado con arroz y papas fritas",
+      "precio": 15.0,
+      "imagen": "https://picsum.photos/seed/especial-lomo-saltado/400/300"
+    },
+    {
+      "id": 703,
+      "subcategoriaSlug": "especialidades",
+      "titulo": "Saltado de Pollo",
+      "descripcion": "Saltado de pollo con arroz y papas fritas",
+      "precio": 14.0,
+      "imagen": "https://picsum.photos/seed/especial-saltado-pollo/400/300"
+    },
+    {
+      "id": 704,
+      "subcategoriaSlug": "especialidades",
+      "titulo": "Lomo Saltado con Chaufa",
+      "descripcion": "Lomo saltado con chaufa, arroz y papas fritas",
+      "precio": 18.0,
+      "imagen": "https://picsum.photos/seed/especial-lomo-chaufa/400/300"
+    },
+    {
+      "id": 705,
+      "subcategoriaSlug": "especialidades",
+      "titulo": "Bisteck a lo Pobre",
+      "descripcion": "Bisteck a lo pobre con arroz y papas fritas",
+      "precio": 18.0,
+      "imagen": "https://picsum.photos/seed/especial-bisteck/400/300"
+    },
+    {
+      "id": 706,
+      "subcategoriaSlug": "especialidades",
+      "titulo": "Chaufa",
+      "descripcion": "Arroz chaufa con arroz y papas fritas",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/especial-chaufa/400/300"
+    },
+    {
+      "id": 707,
+      "subcategoriaSlug": "especialidades",
+      "titulo": "Lomo a lo Pobre",
+      "descripcion": "Lomo a lo pobre con arroz y papas fritas",
+      "precio": 18.0,
+      "imagen": "https://picsum.photos/seed/especial-lomo-pobre/400/300"
+    },
+    {
+      "id": 708,
+      "subcategoriaSlug": "especialidades",
+      "titulo": "Arroz a la Cubana",
+      "descripcion": "Arroz a la cubana con arroz y papas fritas",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/especial-cubana/400/300"
+    },
+    {
+      "id": 709,
+      "subcategoriaSlug": "especialidades",
+      "titulo": "Pechuga a lo Pobre",
+      "descripcion": "Pechuga a lo pobre con arroz y papas fritas",
+      "precio": 18.0,
+      "imagen": "https://picsum.photos/seed/especial-pechuga-pobre/400/300"
     },
     {
       "id": 801,
-      "categoriaSlug": "broaster",
-      "titulo": "Pollo Broaster",
-      "descripcion": "Piezas de pollo marinadas y crujientes al estilo broaster con papas fritas.",
-      "precio": 22.0,
-      "adicionales": [
-        { "nombre": "Extra pieza de pollo", "precio": 8.0 },
-        { "nombre": "Extra papas fritas", "precio": 6.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/broaster-pollo/400/300"
+      "subcategoriaSlug": "combos",
+      "titulo": "Fuente de Nuggets",
+      "descripcion": "10 piezas de nuggets + papas fritas",
+      "precio": 18.0,
+      "imagen": "https://picsum.photos/seed/combo-nuggets/400/300"
     },
     {
       "id": 802,
-      "categoriaSlug": "broaster",
-      "titulo": "Alitas Broaster",
-      "descripcion": "Alitas de pollo crujientes bañadas en salsa picante o BBQ.",
-      "precio": 18.0,
-      "adicionales": [
-        { "nombre": "Extra alitas", "precio": 8.0 },
-        { "nombre": "Aderezo ranch", "precio": 2.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/alitas-broaster/400/300"
+      "subcategoriaSlug": "combos",
+      "titulo": "Fuente de Alitas",
+      "descripcion": "4 alas medianas + papas fritas",
+      "precio": 22.0,
+      "imagen": "https://picsum.photos/seed/combo-alitas/400/300"
+    },
+    {
+      "id": 803,
+      "subcategoriaSlug": "combos",
+      "titulo": "Alitas a la BBQ",
+      "descripcion": "10 piezas + papas fritas",
+      "precio": 22.9,
+      "imagen": "https://picsum.photos/seed/combo-alitas-bbq/400/300"
+    },
+    {
+      "id": 804,
+      "subcategoriaSlug": "combos",
+      "titulo": "Alitas Acevichadas",
+      "descripcion": "10 piezas + papas fritas",
+      "precio": 22.9,
+      "imagen": "https://picsum.photos/seed/combo-alitas-acevichadas/400/300"
+    },
+    {
+      "id": 805,
+      "subcategoriaSlug": "combos",
+      "titulo": "Tequeños",
+      "descripcion": "8 unidades de tequeños",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/combo-tequenos/400/300"
+    },
+    {
+      "id": 806,
+      "subcategoriaSlug": "combos",
+      "titulo": "Combos 1",
+      "descripcion": "5 alitas a la BBQ + 5 alitas acevichadas + 4 tequeños",
+      "precio": 28.0,
+      "imagen": "https://picsum.photos/seed/combo-1/400/300"
+    },
+    {
+      "id": 807,
+      "subcategoriaSlug": "combos",
+      "titulo": "Combos 2",
+      "descripcion": "5 alitas a la BBQ + 5 alitas acevichadas + 4 tequeños + 5 nuggets",
+      "precio": 32.0,
+      "imagen": "https://picsum.photos/seed/combo-2/400/300"
+    },
+    {
+      "id": 808,
+      "subcategoriaSlug": "combos",
+      "titulo": "Combos 3",
+      "descripcion": "3 alitas a la BBQ + 4 alitas acevichadas + 3 tequeños",
+      "precio": 25.0,
+      "imagen": "https://picsum.photos/seed/combo-3/400/300"
+    },
+    {
+      "id": 809,
+      "subcategoriaSlug": "combos",
+      "titulo": "Combos 4",
+      "descripcion": "5 alitas a la BBQ + 5 alitas acevichadas + 6 alitas broster + 5 nuggets + 4 tequeños",
+      "precio": 40.0,
+      "imagen": "https://picsum.photos/seed/combo-4/400/300"
     },
     {
       "id": 901,
-      "categoriaSlug": "mostrito",
-      "titulo": "Mostrito de Maracuyá",
-      "descripcion": "Bebida refrescante de maracuyá natural con hielo y azúcar.",
-      "precio": 10.0,
-      "adicionales": [
-        { "nombre": "Extra hielo", "precio": 1.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/mostrito-maracuya/400/300"
+      "subcategoriaSlug": "promos",
+      "titulo": "Promo 1 (Opción Acevichadas)",
+      "descripcion": "4 acevichadas + chaufa + papas",
+      "precio": 18.0,
+      "imagen": "https://picsum.photos/seed/promo-acevichadas/400/300"
     },
     {
       "id": 902,
-      "categoriaSlug": "mostrito",
-      "titulo": "Mostrito de Limón",
-      "descripcion": "Limón fresco con agua, hielo y un toque de menta.",
-      "precio": 9.0,
-      "adicionales": [
-        { "nombre": "Extra hielo", "precio": 1.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/mostrito-limon/400/300"
+      "subcategoriaSlug": "promos",
+      "titulo": "Promo 1 (Opción BBQ)",
+      "descripcion": "4 bbq + chaufa + papas",
+      "precio": 18.0,
+      "imagen": "https://picsum.photos/seed/promo-bbq/400/300"
     },
     {
       "id": 1001,
-      "categoriaSlug": "especialidad",
-      "titulo": "Lomo Saltado",
-      "descripcion": "Salteado de lomo de res con tomate, cebolla, papas fritas y arroz.",
-      "precio": 35.0,
-      "adicionales": [
-        { "nombre": "Extra arroz", "precio": 4.0 },
-        { "nombre": "Extra papas fritas", "precio": 6.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/lomo-saltado/400/300"
+      "subcategoriaSlug": "frappuccino",
+      "titulo": "Café",
+      "descripcion": "Frappuccino grande de café",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/frapp-cafe/400/300"
     },
     {
       "id": 1002,
-      "categoriaSlug": "especialidad",
-      "titulo": "Ají de Gallina",
-      "descripcion": "Gallina deshilachada en salsa de ají amarillo con arroz y papas.",
-      "precio": 28.0,
-      "adicionales": [
-        { "nombre": "Extra arroz", "precio": 4.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/aji-gallina/400/300"
+      "subcategoriaSlug": "frappuccino",
+      "titulo": "Chocolate",
+      "descripcion": "Frappuccino grande de chocolate",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/frapp-chocolate/400/300"
+    },
+    {
+      "id": 1003,
+      "subcategoriaSlug": "frappuccino",
+      "titulo": "Fresa",
+      "descripcion": "Frappuccino grande de fresa",
+      "precio": 11.0,
+      "imagen": "https://picsum.photos/seed/frapp-fresa/400/300"
+    },
+    {
+      "id": 1004,
+      "subcategoriaSlug": "frappuccino",
+      "titulo": "Oreo",
+      "descripcion": "Frappuccino grande de oreo",
+      "precio": 11.0,
+      "imagen": "https://picsum.photos/seed/frapp-oreo/400/300"
+    },
+    {
+      "id": 1005,
+      "subcategoriaSlug": "frappuccino",
+      "titulo": "Caramelo",
+      "descripcion": "Frappuccino grande de caramelo",
+      "precio": 11.0,
+      "imagen": "https://picsum.photos/seed/frapp-caramelo/400/300"
     },
     {
       "id": 1101,
-      "categoriaSlug": "jugos",
-      "titulo": "Jugo de Naranja",
-      "descripcion": "Jugo de naranja natural recién exprimido.",
-      "precio": 8.0,
-      "adicionales": [],
-      "imagen": "https://picsum.photos/seed/jugo-naranja/400/300"
+      "subcategoriaSlug": "milkshake",
+      "titulo": "Oreo",
+      "descripcion": "Milkshake de oreo",
+      "precio": 11.0,
+      "imagen": "https://picsum.photos/seed/shake-oreo/400/300"
     },
     {
       "id": 1102,
-      "categoriaSlug": "jugos",
-      "titulo": "Jugo de Papaya",
-      "descripcion": "Jugo de papaya natural con un toque de limón.",
-      "precio": 8.0,
-      "adicionales": [],
-      "imagen": "https://picsum.photos/seed/jugo-papaya/400/300"
+      "subcategoriaSlug": "milkshake",
+      "titulo": "Fresa",
+      "descripcion": "Milkshake de fresa",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/shake-fresa/400/300"
+    },
+    {
+      "id": 1103,
+      "subcategoriaSlug": "milkshake",
+      "titulo": "Caramelo",
+      "descripcion": "Milkshake de caramelo",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/shake-caramelo/400/300"
+    },
+    {
+      "id": 1104,
+      "subcategoriaSlug": "milkshake",
+      "titulo": "Chocolate",
+      "descripcion": "Milkshake de chocolate",
+      "precio": 11.0,
+      "imagen": "https://picsum.photos/seed/shake-chocolate/400/300"
+    },
+    {
+      "id": 1105,
+      "subcategoriaSlug": "milkshake",
+      "titulo": "Vainilla",
+      "descripcion": "Milkshake de vainilla",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/shake-vainilla/400/300"
+    },
+    {
+      "id": 1106,
+      "subcategoriaSlug": "milkshake",
+      "titulo": "Lúcuma",
+      "descripcion": "Milkshake de lúcuma",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/shake-lucuma/400/300"
+    },
+    {
+      "id": 1107,
+      "subcategoriaSlug": "milkshake",
+      "titulo": "Mango",
+      "descripcion": "Milkshake de mango",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/shake-mango/400/300"
+    },
+    {
+      "id": 1108,
+      "subcategoriaSlug": "milkshake",
+      "titulo": "Guanábana",
+      "descripcion": "Milkshake de guanábana",
+      "precio": 13.0,
+      "imagen": "https://picsum.photos/seed/shake-guanabana/400/300"
     },
     {
       "id": 1201,
-      "categoriaSlug": "refrescos",
-      "titulo": "Inca Kola",
-      "descripcion": "La bebida gaseosa dorada del Perú, bien fría.",
-      "precio": 5.0,
-      "adicionales": [],
-      "imagen": "https://picsum.photos/seed/inca-kola-nueva/400/300"
+      "subcategoriaSlug": "frozen",
+      "titulo": "Maracuyá ½L",
+      "descripcion": "Frozen de maracuyá mediano",
+      "precio": 7.0,
+      "imagen": "https://picsum.photos/seed/frozen-maracuya-med/400/300"
     },
     {
       "id": 1202,
-      "categoriaSlug": "refrescos",
-      "titulo": "Coca Cola",
-      "descripcion": "Refresco de Coca Cola bien frío.",
-      "precio": 5.0,
-      "adicionales": [],
-      "imagen": "https://picsum.photos/seed/coca-cola/400/300"
+      "subcategoriaSlug": "frozen",
+      "titulo": "Maracuyá 1L",
+      "descripcion": "Frozen de maracuyá grande",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/frozen-maracuya-grande/400/300"
     },
     {
       "id": 1203,
-      "categoriaSlug": "refrescos",
-      "titulo": "Sprite",
-      "descripcion": "Refresco de Sprite con sabor limón.",
-      "precio": 5.0,
-      "adicionales": [],
-      "imagen": "https://picsum.photos/seed/sprite/400/300"
+      "subcategoriaSlug": "frozen",
+      "titulo": "Limonada ½L",
+      "descripcion": "Frozen de limonada mediano",
+      "precio": 7.0,
+      "imagen": "https://picsum.photos/seed/frozen-limonada-med/400/300"
+    },
+    {
+      "id": 1204,
+      "subcategoriaSlug": "frozen",
+      "titulo": "Limonada 1L",
+      "descripcion": "Frozen de limonada grande",
+      "precio": 12.0,
+      "imagen": "https://picsum.photos/seed/frozen-limonada-grande/400/300"
+    },
+    {
+      "id": 1205,
+      "subcategoriaSlug": "frozen",
+      "titulo": "Fresa ½L",
+      "descripcion": "Frozen de fresa mediano",
+      "precio": 9.0,
+      "imagen": "https://picsum.photos/seed/frozen-fresa-med/400/300"
+    },
+    {
+      "id": 1206,
+      "subcategoriaSlug": "frozen",
+      "titulo": "Fresa 1L",
+      "descripcion": "Frozen de fresa grande",
+      "precio": 18.0,
+      "imagen": "https://picsum.photos/seed/frozen-fresa-grande/400/300"
+    },
+    {
+      "id": 1207,
+      "subcategoriaSlug": "frozen",
+      "titulo": "Piña ½L",
+      "descripcion": "Frozen de piña mediano",
+      "precio": 9.0,
+      "imagen": "https://picsum.photos/seed/frozen-pina-med/400/300"
+    },
+    {
+      "id": 1208,
+      "subcategoriaSlug": "frozen",
+      "titulo": "Piña 1L",
+      "descripcion": "Frozen de piña grande",
+      "precio": 16.0,
+      "imagen": "https://picsum.photos/seed/frozen-pina-grande/400/300"
+    },
+    {
+      "id": 1209,
+      "subcategoriaSlug": "frozen",
+      "titulo": "Guanábana ½L",
+      "descripcion": "Frozen de guanábana mediano",
+      "precio": 9.0,
+      "imagen": "https://picsum.photos/seed/frozen-guanabana-med/400/300"
+    },
+    {
+      "id": 1210,
+      "subcategoriaSlug": "frozen",
+      "titulo": "Guanábana 1L",
+      "descripcion": "Frozen de guanábana grande",
+      "precio": 18.0,
+      "imagen": "https://picsum.photos/seed/frozen-guanabana-grande/400/300"
     },
     {
       "id": 1301,
-      "categoriaSlug": "yogurt-en-copa",
-      "titulo": "Yogurt con Granola",
-      "descripcion": "Yogurt natural con granola crujiente y miel.",
-      "precio": 12.0,
-      "adicionales": [
-        { "nombre": "Extra granola", "precio": 3.0 },
-        { "nombre": "Extra miel", "precio": 2.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/yogurt-granola/400/300"
+      "subcategoriaSlug": "refrescos",
+      "titulo": "Limonada ½L",
+      "descripcion": "Refresco de limonada mediano",
+      "precio": 5.0,
+      "imagen": "https://picsum.photos/seed/refresco-limonada-med/400/300"
     },
     {
       "id": 1302,
-      "categoriaSlug": "yogurt-en-copa",
-      "titulo": "Yogurt con Frutas",
-      "descripcion": "Yogurt natural con trozos de frutas frescas de temporada.",
-      "precio": 14.0,
-      "adicionales": [
-        { "nombre": "Extra frutas", "precio": 4.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/yogurt-frutas/400/300"
+      "subcategoriaSlug": "refrescos",
+      "titulo": "Limonada 1L",
+      "descripcion": "Refresco de limonada grande",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/refresco-limonada-grande/400/300"
+    },
+    {
+      "id": 1303,
+      "subcategoriaSlug": "refrescos",
+      "titulo": "Maracuyá ½L",
+      "descripcion": "Refresco de maracuyá mediano",
+      "precio": 5.0,
+      "imagen": "https://picsum.photos/seed/refresco-maracuya-med/400/300"
+    },
+    {
+      "id": 1304,
+      "subcategoriaSlug": "refrescos",
+      "titulo": "Maracuyá 1L",
+      "descripcion": "Refresco de maracuyá grande",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/refresco-maracuya-grande/400/300"
     },
     {
       "id": 1401,
-      "categoriaSlug": "combos",
-      "titulo": "Combo Familiar",
-      "descripcion": "Hamburguesa doble + papas fritas grandes + 2 refrescos.",
-      "precio": 55.0,
-      "adicionales": [
-        { "nombre": "Refresco adicional", "precio": 5.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/combo-familiar/400/300"
+      "subcategoriaSlug": "jugos",
+      "titulo": "Fresa",
+      "descripcion": "Jugo de fresa natural",
+      "precio": 7.0,
+      "imagen": "https://picsum.photos/seed/jugo-fresa/400/300"
     },
     {
       "id": 1402,
-      "categoriaSlug": "combos",
-      "titulo": "Combo Personal",
-      "descripcion": "Hamburguesa clásica + papas fritas + refresco.",
-      "precio": 30.0,
-      "adicionales": [
-        { "nombre": "Upgrade doble carne", "precio": 10.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/combo-personal/400/300"
+      "subcategoriaSlug": "jugos",
+      "titulo": "Papaya",
+      "descripcion": "Jugo de papaya natural",
+      "precio": 6.0,
+      "imagen": "https://picsum.photos/seed/jugo-papaya/400/300"
+    },
+    {
+      "id": 1403,
+      "subcategoriaSlug": "jugos",
+      "titulo": "Piña",
+      "descripcion": "Jugo de piña natural",
+      "precio": 6.0,
+      "imagen": "https://picsum.photos/seed/jugo-pina/400/300"
+    },
+    {
+      "id": 1404,
+      "subcategoriaSlug": "jugos",
+      "titulo": "Melón",
+      "descripcion": "Jugo de melón natural",
+      "precio": 6.0,
+      "imagen": "https://picsum.photos/seed/jugo-melon/400/300"
+    },
+    {
+      "id": 1405,
+      "subcategoriaSlug": "jugos",
+      "titulo": "Chirimoya",
+      "descripcion": "Jugo de chirimoya natural",
+      "precio": 8.0,
+      "imagen": "https://picsum.photos/seed/jugo-chirimoya/400/300"
+    },
+    {
+      "id": 1406,
+      "subcategoriaSlug": "jugos",
+      "titulo": "Lúcuma",
+      "descripcion": "Jugo de lúcuma natural",
+      "precio": 8.0,
+      "imagen": "https://picsum.photos/seed/jugo-lucuma/400/300"
+    },
+    {
+      "id": 1407,
+      "subcategoriaSlug": "jugos",
+      "titulo": "Mango",
+      "descripcion": "Jugo de mango natural",
+      "precio": 7.0,
+      "imagen": "https://picsum.photos/seed/jugo-mango/400/300"
+    },
+    {
+      "id": 1408,
+      "subcategoriaSlug": "jugos",
+      "titulo": "Guanábana",
+      "descripcion": "Jugo de guanábana natural",
+      "precio": 8.0,
+      "imagen": "https://picsum.photos/seed/jugo-guanabana/400/300"
     },
     {
       "id": 1501,
-      "categoriaSlug": "promos",
-      "titulo": "2x1 en Hamburguesas",
-      "descripcion": "Todas las martes y jueves lleva 2 hamburguesas por el precio de 1.",
-      "precio": 25.0,
-      "adicionales": [],
-      "imagen": "https://picsum.photos/seed/promo-2x1/400/300"
+      "subcategoriaSlug": "jugos-leche",
+      "titulo": "Fresa c/ leche",
+      "descripcion": "Jugo de fresa con leche",
+      "precio": 9.0,
+      "imagen": "https://picsum.photos/seed/jugo-leche-fresa/400/300"
     },
     {
       "id": 1502,
-      "categoriaSlug": "promos",
-      "titulo": "Combo Amigos",
-      "descripcion": "2 hamburguesas + papas grandes + 2 milkshakes a precio especial.",
-      "precio": 48.0,
-      "adicionales": [],
-      "imagen": "https://picsum.photos/seed/combo-amigos/400/300"
+      "subcategoriaSlug": "jugos-leche",
+      "titulo": "Papaya c/ leche",
+      "descripcion": "Jugo de papaya con leche",
+      "precio": 7.0,
+      "imagen": "https://picsum.photos/seed/jugo-leche-papaya/400/300"
+    },
+    {
+      "id": 1503,
+      "subcategoriaSlug": "jugos-leche",
+      "titulo": "Melón c/ leche",
+      "descripcion": "Jugo de melón con leche",
+      "precio": 7.0,
+      "imagen": "https://picsum.photos/seed/jugo-leche-melon/400/300"
+    },
+    {
+      "id": 1504,
+      "subcategoriaSlug": "jugos-leche",
+      "titulo": "Chirimoya c/ leche",
+      "descripcion": "Jugo de chirimoya con leche",
+      "precio": 9.0,
+      "imagen": "https://picsum.photos/seed/jugo-leche-chirimoya/400/300"
+    },
+    {
+      "id": 1505,
+      "subcategoriaSlug": "jugos-leche",
+      "titulo": "Lúcuma c/ leche",
+      "descripcion": "Jugo de lúcuma con leche",
+      "precio": 9.0,
+      "imagen": "https://picsum.photos/seed/jugo-leche-lucuma/400/300"
+    },
+    {
+      "id": 1506,
+      "subcategoriaSlug": "jugos-leche",
+      "titulo": "Mango c/ leche",
+      "descripcion": "Jugo de mango con leche",
+      "precio": 9.0,
+      "imagen": "https://picsum.photos/seed/jugo-leche-mango/400/300"
+    },
+    {
+      "id": 1507,
+      "subcategoriaSlug": "jugos-leche",
+      "titulo": "Guanábana c/ leche",
+      "descripcion": "Jugo de guanábana con leche",
+      "precio": 9.0,
+      "imagen": "https://picsum.photos/seed/jugo-leche-guanabana/400/300"
+    },
+    {
+      "id": 1508,
+      "subcategoriaSlug": "jugos-leche",
+      "titulo": "Plátano c/ leche",
+      "descripcion": "Jugo de plátano con leche",
+      "precio": 6.0,
+      "imagen": "https://picsum.photos/seed/jugo-leche-platano/400/300"
     },
     {
       "id": 1601,
-      "categoriaSlug": "extra",
-      "titulo": "Huevo Frito",
-      "descripcion": "Huevo frito perfecto para acompañar tu plato.",
-      "precio": 3.0,
-      "adicionales": [],
-      "imagen": "https://picsum.photos/seed/huevo-frito/400/300"
+      "subcategoriaSlug": "jugos-especiales",
+      "titulo": "Especial",
+      "descripcion": "Jugo especial de la casa",
+      "precio": 9.0,
+      "imagen": "https://picsum.photos/seed/jugo-especial/400/300"
     },
     {
       "id": 1602,
-      "categoriaSlug": "extra",
-      "titulo": "Tocino",
-      "descripcion": "Porción de tocino crujiente y dorado.",
-      "precio": 5.0,
-      "adicionales": [],
-      "imagen": "https://picsum.photos/seed/tocino/400/300"
+      "subcategoriaSlug": "jugos-especiales",
+      "titulo": "Surtido",
+      "descripcion": "Jugo surtido de frutas",
+      "precio": 8.0,
+      "imagen": "https://picsum.photos/seed/jugo-surtido/400/300"
+    },
+    {
+      "id": 1603,
+      "subcategoriaSlug": "jugos-especiales",
+      "titulo": "Plátano + Fresa",
+      "descripcion": "Jugo combinado de plátano y fresa",
+      "precio": 7.0,
+      "imagen": "https://picsum.photos/seed/jugo-platano-fresa/400/300"
+    },
+    {
+      "id": 1604,
+      "subcategoriaSlug": "jugos-especiales",
+      "titulo": "Chirimoya + Lúcuma",
+      "descripcion": "Jugo combinado de chirimoya y lúcuma",
+      "precio": 9.0,
+      "imagen": "https://picsum.photos/seed/jugo-chirimoya-lucuma/400/300"
+    },
+    {
+      "id": 1605,
+      "subcategoriaSlug": "jugos-especiales",
+      "titulo": "Papaya + Piña",
+      "descripcion": "Jugo combinado de papaya y piña",
+      "precio": 8.0,
+      "imagen": "https://picsum.photos/seed/jugo-papaya-pina/400/300"
+    },
+    {
+      "id": 1606,
+      "subcategoriaSlug": "jugos-especiales",
+      "titulo": "Lúcuma + Fresa",
+      "descripcion": "Jugo combinado de lúcuma y fresa",
+      "precio": 8.0,
+      "imagen": "https://picsum.photos/seed/jugo-lucuma-fresa/400/300"
+    },
+    {
+      "id": 1607,
+      "subcategoriaSlug": "jugos-especiales",
+      "titulo": "Fresa + Piña",
+      "descripcion": "Jugo combinado de fresa y piña",
+      "precio": 9.0,
+      "imagen": "https://picsum.photos/seed/jugo-fresa-pina/400/300"
+    },
+    {
+      "id": 1608,
+      "subcategoriaSlug": "jugos-especiales",
+      "titulo": "Papaya + Plátano + Leche",
+      "descripcion": "Jugo combinado de papaya, plátano y leche",
+      "precio": 9.0,
+      "imagen": "https://picsum.photos/seed/jugo-papaya-platano/400/300"
     },
     {
       "id": 1701,
-      "categoriaSlug": "frozen",
-      "titulo": "Frozen de Limón",
-      "descripcion": "Bebida congelada de limón refrescante y perfecta para el calor.",
-      "precio": 12.0,
-      "adicionales": [
-        { "nombre": "Extra hielo", "precio": 1.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/frozen-limon/400/300"
+      "subcategoriaSlug": "yogurt-en-copa",
+      "titulo": "Yogurt + Cereal + Fruta",
+      "descripcion": "Yogurt con cereal y frutas frescas",
+      "precio": 8.0,
+      "imagen": "https://picsum.photos/seed/yogurt-cereal/400/300"
     },
     {
       "id": 1702,
-      "categoriaSlug": "frozen",
-      "titulo": "Frozen de Mango",
-      "descripcion": "Bebida congelada de mango natural, dulce y refrescante.",
-      "precio": 13.0,
-      "adicionales": [
-        { "nombre": "Extra hielo", "precio": 1.0 }
-      ],
-      "imagen": "https://picsum.photos/seed/frozen-mango/400/300"
+      "subcategoriaSlug": "yogurt-en-copa",
+      "titulo": "Yogurt + Granola + Hojuelas + Miel + Frutas",
+      "descripcion": "Yogurt con granola, hojuelas, miel y frutas",
+      "precio": 10.0,
+      "imagen": "https://picsum.photos/seed/yogurt-granola/400/300"
+    },
+    {
+      "id": 1801,
+      "subcategoriaSlug": "cafeteria",
+      "titulo": "Americano",
+      "descripcion": "50% café + 50% agua",
+      "precio": 3.0,
+      "imagen": "https://picsum.photos/seed/cafe-americano/400/300"
+    },
+    {
+      "id": 1802,
+      "subcategoriaSlug": "cafeteria",
+      "titulo": "Capuccino",
+      "descripcion": "50% café + 20% leche + 30% espuma",
+      "precio": 7.0,
+      "imagen": "https://picsum.photos/seed/cafe-capuccino/400/300"
+    },
+    {
+      "id": 1803,
+      "subcategoriaSlug": "cafeteria",
+      "titulo": "Moka",
+      "descripcion": "30% café + 30% leche + 30% espuma + 10% chocolate",
+      "precio": 7.0,
+      "imagen": "https://picsum.photos/seed/cafe-moka/400/300"
+    },
+    {
+      "id": 1804,
+      "subcategoriaSlug": "cafeteria",
+      "titulo": "Café con Leche",
+      "descripcion": "50% café + 50% leche",
+      "precio": 4.9,
+      "imagen": "https://picsum.photos/seed/cafe-leche/400/300"
+    },
+    {
+      "id": 1805,
+      "subcategoriaSlug": "cafeteria",
+      "titulo": "Chocolate con Leche",
+      "descripcion": "50% chocolate + 50% leche",
+      "precio": 4.9,
+      "imagen": "https://picsum.photos/seed/chocolate-leche/400/300"
+    },
+    {
+      "id": 1806,
+      "subcategoriaSlug": "cafeteria",
+      "titulo": "Infusiones (Filtrantes)",
+      "descripcion": "Té, anís, manzanilla",
+      "precio": 2.0,
+      "imagen": "https://picsum.photos/seed/infusiones/400/300"
+    },
+    {
+      "id": 1901,
+      "subcategoriaSlug": "adicionales",
+      "titulo": "Huevo",
+      "descripcion": "Huevo frito adicional",
+      "precio": 2.0,
+      "imagen": "https://picsum.photos/seed/adicional-huevo/400/300"
+    },
+    {
+      "id": 1902,
+      "subcategoriaSlug": "adicionales",
+      "titulo": "Papas",
+      "descripcion": "Porción de papas fritas adicionales",
+      "precio": 5.0,
+      "imagen": "https://picsum.photos/seed/adicional-papas/400/300"
+    },
+    {
+      "id": 1903,
+      "subcategoriaSlug": "adicionales",
+      "titulo": "Queso",
+      "descripcion": "Porción de queso adicional",
+      "precio": 2.0,
+      "imagen": "https://picsum.photos/seed/adicional-queso/400/300"
+    },
+    {
+      "id": 1904,
+      "subcategoriaSlug": "adicionales",
+      "titulo": "Arroz",
+      "descripcion": "Porción de arroz adicional",
+      "precio": 3.0,
+      "imagen": "https://picsum.photos/seed/adicional-arroz/400/300"
+    },
+    {
+      "id": 1905,
+      "subcategoriaSlug": "adicionales",
+      "titulo": "Ensalada",
+      "descripcion": "Porción de ensalada adicional",
+      "precio": 3.0,
+      "imagen": "https://picsum.photos/seed/adicional-ensalada/400/300"
+    },
+    {
+      "id": 1906,
+      "subcategoriaSlug": "adicionales",
+      "titulo": "Chorizo",
+      "descripcion": "Porción de chorizo adicional",
+      "precio": 3.0,
+      "imagen": "https://picsum.photos/seed/adicional-chorizo/400/300"
+    },
+    {
+      "id": 1907,
+      "subcategoriaSlug": "adicionales",
+      "titulo": "Plátano",
+      "descripcion": "Porción de plátano adicional",
+      "precio": 3.0,
+      "imagen": "https://picsum.photos/seed/adicional-platano/400/300"
+    },
+    {
+      "id": 1908,
+      "subcategoriaSlug": "adicionales",
+      "titulo": "Carne",
+      "descripcion": "Porción de carne adicional",
+      "precio": 4.0,
+      "imagen": "https://picsum.photos/seed/adicional-carne/400/300"
     }
   ]
 }
