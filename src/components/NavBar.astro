@@ -5,18 +5,70 @@
   document.addEventListener("DOMContentLoaded",e=>{
     const menu_hamburger = document.getElementById('menu-hamburger')
     const menu_mobil = document.getElementById('menu-mobil')
+    if(!menu_hamburger) return
+    let on_progress = false
+    let tl = gsap.timeline({paused:true})
+    tl
+    .to('.line-menu',{
+      y:function(index,target){
+        return menu_hamburger.clientHeight/2 - target.offsetTop - target.clientHeight/2
+      },
+      background:'#000000',
+      duration:.25,
+    })
+    .to('.line-menu:nth-child(2)',{
+      opacity:0,
+      duration:0
+    })
+    .to(['.line-menu:first-child'],{
+      rotateZ:30,
+      duration:.5,
+      ease:'elastic.out'
+    })
+    .to(['.line-menu:last-child'],{
+      rotateZ:-30,
+      duration:.5,
+      ease:'elastic.out',
+      onComplete:()=>{
+        on_progress = false
+      }
+    },'<')
+    let tl2 = gsap.timeline({paused:true})
+    tl2
+    .to(['.line-menu:first-child','.line-menu:last-child'],{
+      rotateZ:0,
+      duration:.2,
+    })
+    .to('.line-menu:nth-child(2)',{
+      opacity:1,
+      duration:0
+    })
+    .to('.line-menu',{
+      y:0,
+      duration:.2,
+      background:'#b6b6b6',
+      onComplete:()=>{
+        on_progress = false
+      }
+    })
+    
     menu_hamburger?.addEventListener('click',e=>{
-      console.log("Dentro")
-      if(e.target instanceof HTMLElement){
+      if(e.target instanceof HTMLElement && !on_progress){
+        on_progress = true
         const open = parseInt(e.target.dataset.open ?? '0')
-        console.log(open)
+        if(!menu_mobil) return 0
         gsap.to(menu_mobil,{
-          x: open ? -200 : 0,
+          x: open ?  0 : menu_mobil.clientWidth,
           duration:.25,
           onComplete:()=>{
             menu_hamburger.dataset.open = open ? '0' : '1'
-          }
+          },
         })
+        if(open){
+          tl2.restart().play()
+        }else{
+          tl.restart().play()
+        }
       }
     })
   })
@@ -28,18 +80,18 @@
       <div class="">
         <img src="/logowilly.svg" alt="logo" class="w-15 md:w-20" />
       </div>
-      <nav class="hidden md:flex gap-4 [&>span]:border-0">
+      <nav class="hidden md:flex gap-4 [&>span]:border-0 [&>span]:block [&>span]:relative [&>span]:cursor-pointer [&>span::after]:bg-lucha-corn-back [&>span::after]:absolute [&>span::after]:-bottom-1 [&>span::after]:w-0 [&>span:hover::after]:w-full [&>span::after]:h-1 [&>span::after]:left-0 [&>span::after]:transition-all [&>span::after]:right-0 [&>span::after]:mx-auto [&>span::after]:duration-200">
         <span>NOSOTROS</span>
         <span>PROMOCIONES</span>
         <span>MENU</span>
         <span>LOCALES</span>
       </nav>
-      <div id="menu-hamburger" data-open="0" class="w-10 h-auto relative cursor-pointer">
-        <div class="w-10 h-auto flex flex-col md:hidden gap-1 [&>div]:h-1 [&>div]:bg-lucha-gray-sticker relative">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+      <div id="menu-hamburger" data-open="0" class="h-auto relative cursor-pointer md:hidden">
+        <div class="w-10 h-auto flex flex-col gap-[6px] [&>div]:h-1 [&>div]:bg-lucha-gray-sticker pointer-events-none relative">
+          <div class="line-menu"></div>
+          <!-- <div class="line-menu"></div> -->
+          <div class="line-menu"></div>
+          <div class="line-menu"></div>
         </div>
         <!-- <div class="w-10 h-full flex flex-col justify-center md:hidden -gap-1 [&>div]:h-1 [&>div]:bg-green-500 cursor-pointer absolute top-0 border">
           <div class="rotate-[45deg] origin-center"></div>
@@ -48,7 +100,14 @@
       </div>
     </div>
   </div>
-  <div id="menu-mobil" class="w-dvw h-svh bg-green-400 absolute top-0 z-1 -translate-x-100 flex justify-end">
-    <div>wsdfsfsf</div>
+  <!-- <div id="menu-mobil" class="w-dvw h-svh bg-green-400 absolute top-0 z-1 -translate-x-[100vw] flex justify-end md:hidden"> -->
+  <div id="menu-mobil" class="w-dvw h-svh bg-green-400 absolute top-0 z-1 -left-[100vw] flex justify-end md:hidden">
+    <!-- <div>wsdfsfsf</div> -->
   </div>
-</header> 
+</header>
+<style>
+  span::after{
+    content: '';
+    /* background-color: blue; */
+  }
+</style>

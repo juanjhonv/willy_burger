@@ -10,6 +10,7 @@
   --color-lucha-red-light: #ff5a5f;
   --color-lucha-gray-light: #a9a9a9;
   --color-lucha-gray-sticker: #b6b6b6;
+  --color-lucha-corn-back: #ffde9f;
 
   --color-artisan-gold: #c69c6d;
   --color-artisan-gold-light: #fecf9c;
@@ -105,3 +106,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
+
+/* span::after {
+  content: "hol";
+} */
