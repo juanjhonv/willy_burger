@@ -1,0 +1,75 @@
+---
+
+---
+<script>
+  const slider = document.getElementById('pp')
+  const controls = document.querySelectorAll('#controls>div')
+  
+  document.addEventListener('DOMContentLoaded',e=>{
+    if(!controls) return 0
+    controls.forEach((control,indice)=>{
+      if(!(control instanceof HTMLElement)) return
+      control.addEventListener('click',e=>{
+        console.log("Hola",control)
+        let slide = slider!.querySelector(`div:nth-child(${indice+1})`)
+        if(!(slide instanceof HTMLElement)) return
+        slider?.scrollTo({
+          left:slide.offsetLeft,
+          behavior:'smooth'
+        })
+      })
+    })
+    let init = 2
+    setInterval(()=>{
+      console.log("HOla mudno",init)
+      let slide = slider!.querySelector(`div:nth-child(${init})`)
+      if(!(slide instanceof HTMLElement)) return
+      slider?.scrollTo({
+        left:slide.offsetLeft,
+        behavior:'smooth'
+      })
+      init = (init%3) + 1
+      // if(init + 1 > 3){
+      //   init = 1
+      // } else {
+      //   init += 1
+      // }
+    },5000)
+  })
+</script>
+<section id="slider" class="w-full h-auto relative">
+  <div id="pp" class="w-full h-50 border-0 flex overflow-hidden snap-x snap-mandatory [&>div]:w-full [&>div]:shrink-0 [&>div]:snap-center">
+    <div class="bg-red-400">s</div>
+    <div class="bg-green-400">s</div>
+    <div class="bg-blue-400">s</div>
+  </div>
+  <div class="absolute w-full h-auto border-0 bottom-0 flex justify-center items-center">
+    <div id="controls" class="[&>div]:w-3 [&>div]:h-3 [&>div]:rounded-full [&>div]:bg-gray-500 [&>div]:cursor-pointer flex gap-4 py-4">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</section>
+<style>
+  #pp{
+    /* width: 100%;
+    height: 128px;
+    flex-flow: row nowrap;
+    overflow-y: hidden;
+    display: flex;
+    margin: 1em auto;
+    outline: 1px dashed lightgray;
+    flex: none;
+    overflow: auto; */
+    /* scroll-snap-type: x mandatory; */
+  }
+  #pp > div{
+    /* text-align: center; */
+    /* line-height: 128px;
+    font-size: 64px; */
+    /* scroll-snap-align: center; */
+    /* flex: none; */
+    /* width: 100%; */
+  }
+</style>
