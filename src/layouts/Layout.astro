@@ -2,6 +2,7 @@
 import NavBar from '../components/NavBar.astro';
 import Carrousel from '../components/Carrousel.astro';
 import '../styles/global.css';
+import Slider from '../components/Slider.astro';
 
 interface Props {
   title: string;
@@ -23,7 +24,8 @@ const { title, description = 'Menú digital de Willy Burger — Sanguchería tra
   </head>
   <body class="min-h-screen flex flex-col relative overflow-x-hidden">
     <NavBar/>
-    <Carrousel />
+    <Slider/>
+    <!-- <Carrousel /> -->
     <!-- <header class="bg-lucha-gray-light text-white border-b-4 border-charcoal relative">
       <div class="max-w-6xl mx-auto flex items-center justify-center">
         <a href="/" class="flex items-center gap-3 no-underline">
